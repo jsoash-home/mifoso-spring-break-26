@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiFoSo Spring Break &apos;26 — Palm Desert, CA</title>
+  <meta name="description" content="MiFoSo family trip to the Westin Mission Hills Resort Villas, Palm Springs area — March 27–April 2, 2026">
+  <!-- Easter egg: Pat Miller still thinks this trip is in Phoenix. Rico Foster is "handling logistics" (he brought one towel). -->
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sand: #e8dcc4;
+      --sand-deep: #d4c4a8;
+      --terracotta: #c75b39;
+      --terracotta-light: #e07a5a;
+      --sky: #7eb8da;
+      --sky-deep: #4a90c2;
+      --sunset: #f4a261;
+      --sunset-deep: #e76f51;
+      --ink: #3d3429;
+      --cream: #fffbf5;
+      --page-bg: #f4f1ea;
+      --surface: #ffffff;
+      --border-soft: rgba(61, 52, 41, 0.09);
+      --site-nav-offset: 5.5rem;
+    }
+
+    nav.navbar.sticky-top {
+      z-index: 1030;
+    }
+
+    body {
+      font-family: "Nunito", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--page-bg);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .display-font {
+      font-family: "Fredoka", "Nunito", sans-serif;
+    }
+
+    .navbar-brand {
+      font-family: "Fredoka", sans-serif;
+      font-weight: 700;
+      color: var(--terracotta) !important;
+    }
+
+    .hero {
+      min-height: 52vh;
+      background:
+        linear-gradient(135deg, rgba(61, 52, 41, 0.45) 0%, rgba(199, 91, 57, 0.28) 50%, rgba(74, 144, 194, 0.32) 100%),
+        url("https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1920&q=80") center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-badge {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      border-radius: 2rem;
+      padding: 0.35rem 1rem;
+      font-size: 0.95rem;
+      display: inline-block;
+    }
+
+    .section-title {
+      color: var(--ink);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border-soft);
+      display: block;
+      width: 100%;
+    }
+
+    .kid-chip {
+      background: var(--surface);
+      color: var(--terracotta);
+      border: 1px solid var(--border-soft);
+      border-radius: 999px;
+      padding: 0.35rem 0.85rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin: 0.2rem;
+    }
+
+    .itinerary-card {
+      border: 1px solid var(--border-soft);
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(61, 52, 41, 0.06);
+      transition: box-shadow 0.2s ease;
+      background: var(--surface);
+    }
+
+    .itinerary-card:hover {
+      box-shadow: 0 4px 14px rgba(61, 52, 41, 0.1);
+    }
+
+    .itinerary-card .card-header {
+      background: #eef4f8;
+      color: #2c3e4a;
+      font-weight: 700;
+      border: none;
+      padding: 0.65rem 1rem;
+      font-size: 0.92rem;
+    }
+
+    .weather-pill {
+      background: var(--sand);
+      color: var(--ink);
+      border-radius: 0.5rem;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+
+    .gallery-img {
+      border-radius: 0.5rem;
+      object-fit: cover;
+      width: 100%;
+      height: 180px;
+      transition: opacity 0.2s ease;
+    }
+
+    .gallery-img:hover {
+      opacity: 0.92;
+    }
+
+    /* Main story column: readable width & vertical rhythm */
+    #main-content {
+      background: var(--surface);
+      border-radius: 0.75rem;
+      border: 1px solid var(--border-soft);
+      padding: 2rem 1.25rem 2.5rem;
+      box-shadow: 0 1px 2px rgba(61, 52, 41, 0.04);
+    }
+
+    @media (min-width: 768px) {
+      #main-content {
+        padding: 2.5rem 2rem 3rem;
+      }
+    }
+
+    .content-section {
+      padding-top: 1.75rem;
+      padding-bottom: 1.75rem;
+    }
+
+    .content-section:first-of-type {
+      padding-top: 0;
+    }
+
+    .content-section + .content-section {
+      margin-top: 0.5rem;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 2.25rem;
+    }
+
+    /* Side tool cards: calmer than main itinerary cards */
+    .tool-card {
+      border: 1px solid var(--border-soft);
+      border-radius: 0.75rem;
+      box-shadow: 0 1px 3px rgba(61, 52, 41, 0.05);
+      background: var(--surface);
+      overflow: hidden;
+    }
+
+    .tool-card:hover {
+      box-shadow: 0 2px 8px rgba(61, 52, 41, 0.07);
+    }
+
+    footer {
+      background: linear-gradient(135deg, var(--terracotta) 0%, var(--sunset-deep) 100%);
+      color: #fff;
+    }
+
+    .countdown-box {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 1rem;
+      padding: 1rem 1.5rem;
+      backdrop-filter: blur(6px);
+    }
+
+    /* Countdown next to navbar title */
+    .navbar-countdown {
+      border-left: 1px solid rgba(61, 52, 41, 0.12);
+      padding-left: 0.65rem;
+      margin-left: 0.15rem;
+      min-width: 0;
+    }
+
+    .navbar-countdown .navbar-countdown-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.02em;
+      color: #6b6156;
+      line-height: 1.1;
+    }
+
+    .navbar-countdown #countdown {
+      font-family: "Fredoka", "Nunito", sans-serif;
+      font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+      color: var(--terracotta);
+      line-height: 1.2;
+    }
+
+    .ncaa-note {
+      font-size: 0.85rem;
+      color: #5c5348;
+      border-left: 3px solid var(--sunset);
+      padding-left: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    a.text-link-desert {
+      color: var(--terracotta);
+      font-weight: 600;
+    }
+
+    a.text-link-desert:hover {
+      color: var(--sunset-deep);
+    }
+
+    /* NCAA score strip (inside Scores tab) */
+    .scores-controls {
+      background: #2a4d3f;
+      color: #fff;
+    }
+
+    .ncaa-game {
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.6rem;
+      margin-bottom: 0.5rem;
+      background: var(--cream);
+      border: 1px solid rgba(61, 52, 41, 0.08);
+    }
+
+    .ncaa-game.ncaa-live {
+      border-color: var(--terracotta);
+      box-shadow: 0 0 0 2px rgba(231, 111, 81, 0.25);
+    }
+
+    .ncaa-game a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .ncaa-game a:hover .ncaa-gamecast {
+      text-decoration: underline;
+    }
+
+    .ncaa-pulse {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: #e63946;
+      animation: ncaaPulse 1.2s ease-in-out infinite;
+    }
+
+    @keyframes ncaaPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    .ncaa-team-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.35rem;
+      font-size: 0.88rem;
+    }
+
+    .ncaa-logo {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    /* Sticky sidebars on large screens; top clears the navbar (see --site-nav-offset) */
+    @media (min-width: 992px) {
+      .site-sidebar-sticky {
+        position: sticky;
+        top: var(--site-nav-offset);
+        z-index: 1010;
+        align-self: flex-start;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .site-sidebar-sticky {
+        position: static;
+      }
+    }
+
+    /* Main column: Main / Restaurants / Dry Heat / Golf / Hoops */
+    .main-view-tabs {
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 0.75rem;
+      margin-bottom: 0 !important;
+      flex-wrap: wrap;
+      row-gap: 0.4rem;
+    }
+
+    .main-view-tabs > .nav-item {
+      flex: 1 1 auto;
+      min-width: 5.5rem;
+    }
+
+    .main-view-tabs .nav-link {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--ink);
+      border-radius: 0.5rem;
+      padding: 0.5rem 0.65rem;
+    }
+
+    @media (min-width: 992px) {
+      .main-view-tabs .nav-link {
+        font-size: 0.95rem;
+        padding: 0.55rem 0.85rem;
+      }
+    }
+
+    .main-view-tabs .nav-link:hover:not(.active) {
+      background: rgba(199, 91, 57, 0.08);
+    }
+
+    .main-view-tabs .nav-link.active {
+      background: var(--terracotta);
+      color: #fff;
+    }
+
+    .restaurant-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .restaurant-list li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid rgba(61, 52, 41, 0.08);
+    }
+
+    .restaurant-list li:last-child {
+      border-bottom: none;
+    }
+
+    .rest-subheading {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      border-top: 1px solid var(--border-soft);
+    }
+
+    #pane-main-restaurants .restaurant-list {
+      column-count: 1;
+    }
+
+    @media (min-width: 768px) {
+      #pane-main-restaurants .restaurant-list {
+        column-count: 2;
+        column-gap: 2rem;
+      }
+      #pane-main-restaurants .restaurant-list li {
+        break-inside: avoid;
+      }
+    }
+
+    .restaurant-list .rest-name {
+      font-weight: 700;
+      color: var(--terracotta);
+    }
+
+    .restaurant-list .rest-meta {
+      font-size: 0.78rem;
+      color: #5c5348;
+      display: block;
+    }
+
+    .rest-metrics {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #4a433a;
+      margin-bottom: 0.2rem;
+    }
+
+    .rest-metrics a {
+      text-decoration: none;
+    }
+
+    .rest-metrics a:hover {
+      text-decoration: underline;
+    }
+
+    .rest-desc {
+      font-size: 0.78rem;
+      color: #5c5348;
+      display: block;
+    }
+
+    .ncaa-games-panel {
+      max-height: min(70vh, 560px);
+      overflow-y: auto;
+    }
+
+    .ncaa-board-heading {
+      letter-spacing: 0.04em;
+      font-size: 0.7rem;
+    }
+
+    /* Tabbed trip sidebar: switch between scores and local research */
+    .sidebar-tools-card .card-header {
+      background: #fff;
+      border-bottom: 1px solid rgba(61, 52, 41, 0.1);
+    }
+
+    .sidebar-pills .nav-link {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--ink);
+      border-radius: 0.65rem;
+      padding: 0.45rem 0.35rem;
+      line-height: 1.15;
+    }
+
+    .sidebar-pills .nav-link:hover {
+      background: rgba(199, 91, 57, 0.12);
+    }
+
+    .sidebar-pills .nav-link.active {
+      background: var(--terracotta);
+      color: #fff;
+    }
+
+    .sidebar-research-panel {
+      max-height: min(72vh, 620px);
+      overflow-y: auto;
+      font-size: 0.88rem;
+    }
+
+    .sidebar-research-panel h4 {
+      font-size: 0.95rem;
+      color: var(--terracotta);
+      margin-top: 1rem;
+    }
+
+    .sidebar-research-panel h4:first-child {
+      margin-top: 0;
+    }
+
+    .sidebar-research-panel ul {
+      padding-left: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .sidebar-research-panel .research-note {
+      font-size: 0.78rem;
+      color: #6b6156;
+      border-left: 3px solid var(--sunset);
+      padding-left: 0.6rem;
+      margin-top: 0.75rem;
+    }
+
+    /* Full-width detours tab: no sidebar scroll box */
+    #pane-main-detours .sidebar-research-panel {
+      max-height: none;
+      overflow: visible;
+    }
+
+    /* Palm Springs Trip Guide — nested tabs + cards */
+    .trip-guide-banner {
+      background: linear-gradient(135deg, rgba(199, 91, 57, 0.09) 0%, rgba(126, 184, 218, 0.12) 100%);
+      border: 1px solid var(--border-soft);
+      border-radius: 0.75rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .trip-guide-subtabs {
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem !important;
+    }
+
+    .trip-guide-subtabs .nav-link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 0.5rem;
+      padding: 0.4rem 0.7rem;
+      color: var(--ink);
+      border: 1px solid transparent;
+    }
+
+    .trip-guide-subtabs .nav-link:hover:not(.active) {
+      background: rgba(199, 91, 57, 0.08);
+    }
+
+    .trip-guide-subtabs .nav-link.active {
+      background: var(--terracotta);
+      color: #fff;
+      border-color: var(--terracotta);
+    }
+
+    .trip-guide-card {
+      border: 1px solid var(--border-soft);
+      border-radius: 0.65rem;
+      background: var(--surface);
+      height: 100%;
+      padding: 0.9rem 1rem;
+      box-shadow: 0 1px 3px rgba(61, 52, 41, 0.06);
+    }
+
+    .trip-guide-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: var(--ink);
+    }
+
+    .trip-guide-card .trip-guide-emoji {
+      font-size: 1.4rem;
+      line-height: 1.2;
+    }
+
+    .trip-guide-event-card {
+      border-left: 4px solid var(--sunset);
+      padding-left: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .trip-guide-footnote {
+      font-size: 0.82rem;
+      color: #6b6156;
+    }
+
+    .golf-course-card,
+    .hoops-spot-card {
+      border: 1px solid var(--border-soft);
+      border-radius: 0.65rem;
+      background: var(--surface);
+      padding: 0.95rem 1.05rem;
+      height: 100%;
+      box-shadow: 0 1px 3px rgba(61, 52, 41, 0.06);
+    }
+
+    .golf-course-card h3,
+    .hoops-spot-card h3 {
+      font-size: 1.05rem;
+      color: var(--terracotta);
+      margin-bottom: 0.35rem;
+    }
+
+    .golf-meta {
+      font-size: 0.78rem;
+      color: #5c5348;
+      font-weight: 600;
+    }
+
+    #day-jump-nav .btn-outline-secondary {
+      border-color: var(--border-soft);
+      color: var(--ink);
+      font-size: 0.8rem;
+      padding: 0.3rem 0.65rem;
+    }
+    #day-jump-nav .btn-outline-secondary:hover {
+      background: var(--terracotta);
+      color: #fff;
+      border-color: var(--terracotta);
+    }
+
+    @media (max-width: 575.98px) {
+      .hero h1 { font-size: 2.2rem !important; word-break: break-word; hyphens: auto; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top shadow-none">
+    <div class="container">
+      <div class="d-flex align-items-center gap-2 gap-sm-3 flex-grow-1 min-w-0 me-2">
+        <a class="navbar-brand mb-0 text-truncate" href="#">🏜️ MiFoSo &apos;26</a>
+        <div class="navbar-countdown text-end">
+          <span class="navbar-countdown-label d-block text-uppercase fw-semibold">Trip in</span>
+          <p id="countdown" class="mb-0 fw-bold" aria-live="polite">Calculating…</p>
+        </div>
+      </div>
+      <button class="navbar-toggler flex-shrink-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#whos-coming">Who&apos;s Coming</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#itinerary">Itinerary</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#resort">Resort</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#logistics">Getting There</a></li>
+          <li class="nav-item"><a class="nav-link" href="#main-content" data-bs-toggle="tab" data-bs-target="#pane-main-restaurants" role="tab">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link" href="#main-content" data-bs-toggle="tab" data-bs-target="#pane-main-detours" role="tab">Dry Heat</a></li>
+          <li class="nav-item"><a class="nav-link" href="#main-content" data-bs-toggle="tab" data-bs-target="#pane-main-golf" role="tab">Golf</a></li>
+          <li class="nav-item"><a class="nav-link" href="#main-content" data-bs-toggle="tab" data-bs-target="#pane-main-hoops" role="tab">Hoops</a></li>
+          <li class="nav-item"><a class="nav-link" href="#page-tools">Scores</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero-main">
+    <div class="container py-5">
+      <p class="hero-badge mb-3" title="Pat Miller demanded a Gantt chart. Rico Foster brought a pool noodle. Democracy won.">📍 Westin Mission Hills Resort Villas · Palm Springs area</p>
+      <h1 class="display-4 display-font fw-bold mb-3">MiFoSo Spring Break &apos;26</h1>
+      <p class="lead fs-4 mb-2">Palm Desert, CA</p>
+      <p class="mb-0 fs-5">March 27 – April 2, 2026 · Sun, golf, pools &amp; cousin chaos ☀️</p>
+    </div>
+  </header>
+
+  <!-- Main column (tabbed) + scores sidebar -->
+  <div id="page-tools" class="container py-4 py-lg-5">
+    <div class="row g-4 g-xl-5 align-items-start">
+      <div class="col-12 col-lg-8 order-1" id="main-content">
+        <ul class="nav nav-pills nav-fill flex-wrap main-view-tabs" id="mainViewTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active w-100 py-2" id="tab-main-trip" data-bs-toggle="tab" data-bs-target="#pane-main-trip" type="button" role="tab" aria-controls="pane-main-trip" aria-selected="true">Main</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link w-100 py-2" id="tab-main-restaurants" data-bs-toggle="tab" data-bs-target="#pane-main-restaurants" type="button" role="tab" aria-controls="pane-main-restaurants" aria-selected="false">Restaurants</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link w-100 py-2" id="tab-main-detours" data-bs-toggle="tab" data-bs-target="#pane-main-detours" type="button" role="tab" aria-controls="pane-main-detours" aria-selected="false" title="Hikes, day trips &amp; local intel">Dry Heat &amp; Detours</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link w-100 py-2" id="tab-main-golf" data-bs-toggle="tab" data-bs-target="#pane-main-golf" type="button" role="tab" aria-controls="pane-main-golf" aria-selected="false" title="Courses near Mission Hills &amp; the valley">⛳ Golf</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link w-100 py-2" id="tab-main-hoops" data-bs-toggle="tab" data-bs-target="#pane-main-hoops" type="button" role="tab" aria-controls="pane-main-hoops" aria-selected="false" title="Outdoor courts &amp; gym hoops">🏀 Hoops</button>
+          </li>
+        </ul>
+        <div class="tab-content pt-3" id="mainViewTabContent">
+          <div class="tab-pane fade show active" id="pane-main-trip" role="tabpanel" aria-labelledby="tab-main-trip" tabindex="0">
+
+  <!-- Who's Coming -->
+  <section id="whos-coming" class="content-section">
+      <h2 class="section-title mb-3">Who&apos;s Coming?</h2>
+      <p class="lead text-secondary mb-0" style="font-size: 1.1rem;">
+        Three families, five awesome kids, and a whole lot of sunscreen. This page is your cheat sheet for the week — weather vibes, day plans, March Madness on TV, and a few desert facts to sound smart by the pool.
+      </p>
+      <div class="row align-items-center mt-4">
+        <div class="col-lg-7">
+          <p class="mb-3"><strong>The crew:</strong> Brooke, Evan, Landon, Lexi &amp; Caelyn — aka the pool&apos;s unofficial splash committee. 🌊</p>
+          <ul class="list-unstyled">
+            <li class="mb-2">👧 <strong>Brooke</strong> — Chief of sunscreen reminders (someone has to).</li>
+            <li class="mb-2">👦 <strong>Evan</strong> — First in line for breakfast tacos.</li>
+            <li class="mb-2">👦 <strong>Landon</strong> — MVP of cannonballs.</li>
+            <li class="mb-2">👧 <strong>Lexi</strong> — Playlist DJ for road trips.</li>
+            <li class="mb-2">👧 <strong>Caelyn</strong> — Snack inventory expert.</li>
+          </ul>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+          <span class="kid-chip">Brooke</span>
+          <span class="kid-chip">Evan</span>
+          <span class="kid-chip">Landon</span>
+          <span class="kid-chip">Lexi</span>
+          <span class="kid-chip">Caelyn</span>
+          <p class="mt-3 small text-muted mb-0">Parents: you&apos;re invited too 😉</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Resort Amenities -->
+  <section id="resort" class="content-section">
+    <h2 class="section-title mb-3">🏨 What's at the Resort</h2>
+    <p class="text-secondary mb-3" style="font-size:0.98rem;">Westin Mission Hills Resort Villas — here's what's waiting on property. No need to leave (but you will, because tacos).</p>
+    <div class="row row-cols-2 row-cols-md-3 g-3">
+      <div class="col"><div class="trip-guide-card text-center h-100"><p class="trip-guide-emoji mb-1">🏊</p><h3 class="h6 mt-1 mb-1">3 Pools</h3><p class="small mb-0 text-secondary">Zero-entry main pool, adult pool &amp; kids splash area</p></div></div>
+      <div class="col"><div class="trip-guide-card text-center h-100"><p class="trip-guide-emoji mb-1">🌀</p><h3 class="h6 mt-1 mb-1">Lazy River</h3><p class="small mb-0 text-secondary">Landon's personal racetrack — no adults allowed to lose 😄</p></div></div>
+      <div class="col"><div class="trip-guide-card text-center h-100"><p class="trip-guide-emoji mb-1">⛳</p><h3 class="h6 mt-1 mb-1">Golf (36 holes)</h3><p class="small mb-0 text-secondary">Pete Dye North &amp; Gary Player South courses on-site</p></div></div>
+      <div class="col"><div class="trip-guide-card text-center h-100"><p class="trip-guide-emoji mb-1">🧖</p><h3 class="h6 mt-1 mb-1">Spa &amp; Fitness</h3><p class="small mb-0 text-secondary">Full spa, sauna &amp; fitness center — adults only (sorry, Evan)</p></div></div>
+      <div class="col"><div class="trip-guide-card text-center h-100"><p class="trip-guide-emoji mb-1">🎾</p><h3 class="h6 mt-1 mb-1">Tennis &amp; Pickleball</h3><p class="small mb-0 text-secondary">Courts on property — bring your paddles</p></div></div>
+      <div class="col"><div class="trip-guide-card text-center h-100"><p class="trip-guide-emoji mb-1">🍽️</p><h3 class="h6 mt-1 mb-1">Pinzimini Restaurant</h3><p class="small mb-0 text-secondary">On-site Italian dining &amp; casual pool bar</p></div></div>
+    </div>
+    <p class="small text-muted mt-3 mb-0">Verify current amenities &amp; hours on <a class="text-link-desert" href="https://www.marriott.com/en-us/hotels/psprw-the-westin-mission-hills-resort-and-villas/overview/" target="_blank" rel="noopener noreferrer">Marriott's site</a> before the trip.</p>
+  </section>
+
+  <!-- Getting There / Logistics -->
+  <section id="logistics" class="content-section">
+    <h2 class="section-title mb-3">🗺️ Getting There</h2>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="trip-guide-card h-100">
+          <p class="trip-guide-emoji mb-1">✈️</p>
+          <h3 class="h6">Fly into Palm Springs (PSP)</h3>
+          <p class="small mb-0">Palm Springs International is <strong>~15 min</strong> from the resort — easy taxi or rideshare. <a class="text-link-desert" href="https://www.palmspringsca.gov/government/departments/airport" target="_blank" rel="noopener noreferrer">PSP Airport →</a></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="trip-guide-card h-100">
+          <p class="trip-guide-emoji mb-1">🚗</p>
+          <h3 class="h6">Drive from SoCal / AZ</h3>
+          <p class="small mb-0">Los Angeles <strong>~2 hrs</strong> via I-10 East · San Diego <strong>~2.5 hrs</strong> · Phoenix <strong>~3 hrs</strong> via I-10 West. Leave before 9am or after 7pm from LA to beat traffic.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="trip-guide-card h-100">
+          <p class="trip-guide-emoji mb-1">📍</p>
+          <h3 class="h6">Villa Address</h3>
+          <p class="small mb-1"><strong>Westin Mission Hills Resort Villas</strong><br>71777 Dinah Shore Dr<br>Rancho Mirage, CA 92270</p>
+          <a class="text-link-desert small" href="https://www.google.com/maps/search/?api=1&query=Westin+Mission+Hills+Resort+Villas+Rancho+Mirage+CA" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="trip-guide-card h-100">
+          <p class="trip-guide-emoji mb-1">🛒</p>
+          <h3 class="h6">Good to know nearby</h3>
+          <ul class="small mb-0">
+            <li><strong>Grocery:</strong> Ralphs &amp; Stater Bros. ~5 min drive</li>
+            <li><strong>Pharmacy:</strong> CVS / Walgreens along Hwy 111</li>
+            <li><strong>Gas:</strong> Bob Hope Dr &amp; Dinah Shore Dr</li>
+            <li><strong>Check-in:</strong> 4pm · <strong>Check-out:</strong> 11am (verify with Marriott)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Itinerary -->
+  <section id="itinerary" class="content-section">
+      <h2 class="section-title mb-3">Day-by-Day</h2>
+      <p class="text-secondary mb-4" style="font-size: 0.98rem;">
+        <strong>Weather:</strong> Typical late-March Palm Desert averages — highs around <strong>88–92°F</strong>, lots of sun, and <strong>~0% rain</strong> (estimates; check a forecast before you pack). 🌡️
+      </p>
+
+      <div class="d-flex flex-wrap gap-2 mb-4" id="day-jump-nav" aria-label="Jump to day">
+        <a href="#day-327" class="btn btn-sm btn-outline-secondary fw-bold">3/27</a>
+        <a href="#day-328" class="btn btn-sm btn-outline-secondary fw-bold">3/28</a>
+        <a href="#day-329" class="btn btn-sm btn-outline-secondary fw-bold">3/29</a>
+        <a href="#day-330" class="btn btn-sm btn-outline-secondary fw-bold">3/30</a>
+        <a href="#day-331" class="btn btn-sm btn-outline-secondary fw-bold">3/31</a>
+        <a href="#day-401" class="btn btn-sm btn-outline-secondary fw-bold">4/1</a>
+        <a href="#day-402" class="btn btn-sm btn-outline-secondary fw-bold">4/2</a>
+      </div>
+
+      <div class="row g-3 g-md-4">
+        <!-- Fri 3/27 -->
+        <div class="col-md-6" id="day-327">
+          <div class="card itinerary-card h-100">
+            <div class="card-header">Fri Mar 27 — Arrival day</div>
+            <div class="card-body">
+              <p class="mb-2"><span class="weather-pill">☀️ ~90°F · Sunny · Rain ~0% (est.)</span></p>
+              <p class="small mb-2"><strong>On deck:</strong> Check in at the villas, unpack, explore the resort pools, easy dinner nearby. Maybe a sunset walk — Evan &amp; Landon can race to the cabanas (walking only!).</p>
+              <p class="small mb-0"><strong>🏀 NCAA:</strong> <em>Sweet 16</em> wraps up this round — tip times &amp; matchups <strong>TBD</strong>; teams TBD. Perfect background TV while Brooke &amp; Lexi pick their bracket picks.</p>
+              <p class="ncaa-note small mb-0">Elite Eight is next (Sat–Sun); Final Four 4/5 &amp; 4/7, Championship 4/6 — all after we leave, so we catch the end of the tournament from home.</p>
+              <p class="small mt-2 mb-0"><strong>🌴 Fun fact:</strong> Palm Desert sits on the ancestral land of the Cahuilla people — the name &quot;Palm Desert&quot; only dates to the 1940s when date palms were planted for agriculture.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sat 3/28 -->
+        <div class="col-md-6" id="day-328">
+          <div class="card itinerary-card h-100">
+            <div class="card-header">Sat Mar 28 — Pool + games</div>
+            <div class="card-body">
+              <p class="mb-2"><span class="weather-pill">☀️ ~91°F · Sunny · Rain ~0% (est.)</span></p>
+              <p class="small mb-2"><strong>On deck:</strong> Resort pool day — Caelyn brings the floaties; Lexi claims the best lounge chairs. Casual lunch at the pool or villa BBQ if someone feels chef-y.</p>
+              <p class="small mb-0"><strong>🏀 NCAA:</strong> <em>Elite Eight</em> — games &amp; times <strong>TBD</strong>; teams TBD. Caelyn&apos;s snack spread pairs well with buzzer-beaters.</p>
+              <p class="small mt-2 mb-0"><strong>🌴 Fun fact:</strong> The Coachella Valley gets more than 350 sunny days a year — pack hats for the kids (Brooke already knows this).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sun 3/29 -->
+        <div class="col-md-6" id="day-329">
+          <div class="card itinerary-card h-100">
+            <div class="card-header">Sun Mar 29 — Joshua Tree day</div>
+            <div class="card-body">
+              <p class="mb-2"><span class="weather-pill">☀️ ~89°F · Sunny · Rain ~0% (est.)</span></p>
+              <p class="small mb-2"><strong>On deck:</strong> Day trip to <strong>Joshua Tree National Park</strong> — short hikes, Skull Rock, giant boulders for photos. Pack water &amp; snacks; Evan&apos;s in charge of the cooler checklist.</p>
+              <p class="small mb-0"><strong>🏀 NCAA:</strong> <em>Elite Eight</em> continues — <strong>TBD</strong> matchups. DVR or stream from the villa if we get back late — teams TBD.</p>
+              <p class="small mt-2 mb-0"><strong>🌵 Fun fact:</strong> Joshua Trees aren&apos;t actually trees — they&apos;re yuccas in the agave family. The park spans two deserts: the Mojave and the Colorado.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mon 3/30 -->
+        <div class="col-md-6" id="day-330">
+          <div class="card itinerary-card h-100">
+            <div class="card-header">Mon Mar 30 — Golf &amp; chill</div>
+            <div class="card-body">
+              <p class="mb-2"><span class="weather-pill">☀️ ~90°F · Sunny · Rain ~0% (est.)</span></p>
+              <p class="small mb-2"><strong>On deck:</strong> Golf morning for the adults — book tee times before you leave home! Meanwhile the kids hit the lazy river, try the resort's mini putting green, or take a short drive to <strong><a class="text-link-desert" href="https://www.livingdesert.org/" target="_blank" rel="noopener noreferrer">Living Desert Zoo &amp; Gardens</a></strong> (giraffes, splash pad, butterflies — 15 min away). Landon is calculating his optimal splash-radius trajectory. 🦒</p>
+              <p class="small mb-0"><strong>🏀 NCAA:</strong> Usually a <strong>break</strong> between Elite Eight and Final Four — no tournament games scheduled. Highlights &amp; recaps only — next live rounds: Final Four (<strong>4/5 &amp; 4/7</strong>) and Championship (<strong>4/6</strong>) after we head home; teams <strong>TBD</strong>.</p>
+              <p class="small mt-2 mb-0"><strong>🌴 Fun fact:</strong> Palm Springs became a Hollywood hideaway in the 1920s–30s — &quot;two-hour rule&quot; stars could be on set in LA fast. Palm Desert grew as the valley&apos;s shopping &amp; culture hub.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tue 3/31 -->
+        <div class="col-md-6" id="day-331">
+          <div class="card itinerary-card h-100">
+            <div class="card-header">Tue Mar 31 — Dining out</div>
+            <div class="card-body">
+              <p class="mb-2"><span class="weather-pill">☀️ ~92°F · Sunny · Rain ~0% (est.)</span></p>
+              <p class="small mb-2"><strong>On deck:</strong> Morning browse on <strong>El Paseo</strong> — art galleries, date shakes from a roadside stand, and window shopping. For dinner: make a reservation early (spring break fills fast). Top picks: <strong>Mastro's</strong> for steaks, <strong>Cuistot</strong> for French, or <strong>Mitch's on El Paseo</strong> for seafood. Bonus: swing by the <strong>Cabazon Dinosaurs</strong> off I-10 on the way (Evan and Landon will insist). 🦕 Lexi picks the dinner playlist; Brooke negotiates dessert.</p>
+              <p class="small mb-0"><strong>🏀 NCAA:</strong> Still in the <strong>off window</strong> before Final Four. Re-watch classic tourney moments or play H-O-R-S-E at the resort — Final Four <strong>4/5 &amp; 4/7</strong>, Championship <strong>4/6</strong> (teams <strong>TBD</strong>).</p>
+              <p class="small mt-2 mb-0"><strong>🌴 Fun fact:</strong> El Paseo is nicknamed the &quot;Rodeo Drive of the Desert&quot; — art galleries, shops, and palm-lined sidewalks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wed 4/1 -->
+        <div class="col-md-6" id="day-401">
+          <div class="card itinerary-card h-100">
+            <div class="card-header">Wed Apr 1 — Spa / pool / jokes</div>
+            <div class="card-body">
+              <p class="mb-2"><span class="weather-pill">☀️ ~91°F · Sunny · Rain ~0% (est.)</span></p>
+              <p class="small mb-2"><strong>On deck:</strong> April Fools&apos; — prank responsibly! Optional spa for grown-ups; mega pool day for kids. Caelyn &amp; Lexi could coordinate a harmless poolside prank (no phones in the pool!).</p>
+              <p class="small text-secondary fst-italic mb-2">P.S. Pat Miller &amp; Rico Foster are officially banned from coordinating the same prank (last year was enough).</p>
+              <p class="small mb-0"><strong>🏀 NCAA:</strong> No live tournament games today — <strong>Final Four</strong> on <strong>4/5 &amp; 4/7</strong>, <strong>Championship</strong> <strong>4/6</strong> — matchups &amp; teams all <strong>TBD</strong>.</p>
+              <p class="small mt-2 mb-0"><strong>🌴 Fun fact:</strong> The San Andreas Fault runs near the valley — those rocky hills you see? Lots of tectonic storytime for curious kids.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thu 4/2 -->
+        <div class="col-md-6" id="day-402">
+          <div class="card itinerary-card h-100">
+            <div class="card-header">Thu Apr 2 — Pack up &amp; roll out</div>
+            <div class="card-body">
+              <p class="mb-2"><span class="weather-pill">☀️ ~90°F · Sunny · Rain ~0% (est.)</span></p>
+              <p class="small mb-2"><strong>On deck:</strong> <strong>11am checkout</strong> — Caelyn times the final cannonball. Grab breakfast at <strong>Sherman's Deli</strong> (worth the stop — giant portions, classic deli) or the resort café before loading up. Mandatory group photo by the pool; everyone say "desert!" Evan tries to photobomb — we let him. Safe travels all. 🌵</p>
+              <p class="small mb-0"><strong>🏀 NCAA:</strong> Final Four weekend starts soon — <strong>4/5 &amp; 4/7</strong> semis, <strong>4/6</strong> title game (approx. typical calendar — confirm when brackets drop). Teams all <strong>TBD</strong>.</p>
+              <p class="small mt-2 mb-0"><strong>🌴 Fun fact:</strong> Mission Hills reflects the valley&apos;s resort &amp; golf heritage — rolling greens, Santa Rosa Mountains views, and that classic desert &quot;winter warm / spring perfect&quot; vibe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="small text-muted mt-4 mb-0">
+        Westin Mission Hills Resort Villas — verify address &amp; amenities on <a class="text-link-desert" href="https://www.marriott.com/" target="_blank" rel="noopener noreferrer">Marriott&apos;s site</a>. NCAA dates are typical bracket windows; always check official schedules.
+      </p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="content-section">
+      <h2 class="section-title mb-3">Photo Vibes</h2>
+      <p class="text-secondary mb-4" style="font-size: 0.98rem;">Desert mood board — swap in your own pics after the trip. 📸</p>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <img class="gallery-img shadow-sm" src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=800&q=80" alt="Palm Springs desert landscape with wind turbines" loading="lazy">
+          <p class="small text-center mt-2 mb-0">Palm Springs / desert</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="gallery-img shadow-sm" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Joshua trees in Joshua Tree National Park" loading="lazy">
+          <p class="small text-center mt-2 mb-0">Joshua Tree</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="gallery-img shadow-sm" src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80" alt="Palm Springs resort pool with palm trees" loading="lazy">
+          <p class="small text-center mt-2 mb-0">Resort pool (Palm Springs mood)</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="gallery-img shadow-sm" src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&q=80" alt="Desert sand dunes" loading="lazy">
+          <p class="small text-center mt-2 mb-0">Desert textures</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="gallery-img shadow-sm" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80" alt="Road through desert" loading="lazy">
+          <p class="small text-center mt-2 mb-0">Road trip energy</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="gallery-img shadow-sm" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" alt="Desert mountain sunset, orange and pink sky" loading="lazy">
+          <p class="small text-center mt-2 mb-0">Desert sunset</p>
+        </div>
+      </div>
+  </section>
+
+          </div>
+          <div class="tab-pane fade" id="pane-main-restaurants" role="tabpanel" aria-labelledby="tab-main-restaurants" tabindex="0">
+            <section id="restaurants" class="content-section pt-0 border-0">
+              <h2 class="section-title mb-3">Where to eat &amp; drink</h2>
+              <p class="text-secondary mb-2" style="font-size: 0.98rem;">Top picks near <strong>Westin Mission Hills Resort Villas</strong> (71777 Dinah Shore Dr, Rancho Mirage) — restaurants, breweries &amp; taprooms. <strong>~mi</strong> = approximate driving distance from the hotel. <strong>★</strong> = TripAdvisor bubble rating (out of 5); tap to open TripAdvisor search — confirm live ratings.</p>
+              <p class="small text-muted mb-4">Hours, menus, and review scores change.</p>
+
+              <div id="trip-guide-eat" class="trip-guide-banner mb-4">
+                <p class="fw-bold mb-1">🌴 Palm Springs Trip Guide · Eat &amp; Drink</p>
+                <p class="small text-secondary mb-3 mb-md-4">March 27–April 1, 2026 · Casual friend intel for downtown Palm Springs — desert adventure meets chill vacation. Double-check hours before you roll up.</p>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                  <div class="col">
+                    <div class="trip-guide-card">
+                      <p class="trip-guide-emoji mb-1">🥓</p>
+                      <h3 class="h6">Cheeky&apos;s</h3>
+                      <p class="small mb-2"><span class="badge bg-light text-dark border">Michelin Listed</span> · <a class="text-link-desert" href="https://www.cheekysps.com/" target="_blank" rel="noopener noreferrer">622 N Palm Canyon Dr</a></p>
+                      <p class="small mb-0">Open daily 8am–2pm · No reservations — get there at 8am sharp or budget a 30–60 min wait. Rotating bacon flight (5 strips, flavors change weekly), housemade cinnamon rolls, seasonal menu. Worth the wait.</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="trip-guide-card">
+                      <p class="trip-guide-emoji mb-1">🍕</p>
+                      <h3 class="h6">Birba</h3>
+                      <p class="small mb-2"><a class="text-link-desert" href="https://www.birbaps.com/" target="_blank" rel="noopener noreferrer">800 N Palm Canyon Dr</a></p>
+                      <p class="small mb-0">Mon–Sat 5–10pm · Sun brunch 10am–2pm + dinner 5–10pm. Italian street food under string lights on a fire-pit patio. Order the Birba pizza (prosciutto, honey, chili oil) and the spicy pork meatballs.</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="trip-guide-card">
+                      <p class="trip-guide-emoji mb-1">🍸</p>
+                      <h3 class="h6">Bar Cecil</h3>
+                      <p class="small mb-2">Downtown Palm Springs · Michelin Guide listed</p>
+                      <p class="small mb-0">Book ASAP — one of the toughest tables in town. Steak tartare and duck get the hype. <a class="text-link-desert" href="https://www.barcecil.com/" target="_blank" rel="noopener noreferrer">barcecil.com</a></p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="trip-guide-card">
+                      <p class="trip-guide-emoji mb-1">🎬</p>
+                      <h3 class="h6">Workshop Kitchen + Bar</h3>
+                      <p class="small mb-2">Farm-to-table in a renovated movie theater</p>
+                      <p class="small mb-0">Seasonal menu, community courtyard — great date-night energy. <a class="text-link-desert" href="https://www.workshopkitchen.com/" target="_blank" rel="noopener noreferrer">workshopkitchen.com</a></p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="trip-guide-card">
+                      <p class="trip-guide-emoji mb-1">🌄</p>
+                      <h3 class="h6">Copley&apos;s on Palm Canyon</h3>
+                      <p class="small mb-2"><a class="text-link-desert" href="https://www.copleyspalmsprings.com/" target="_blank" rel="noopener noreferrer">621 N Palm Canyon Dr</a> · Cary Grant&apos;s former estate</p>
+                      <p class="small mb-0">Upscale American with a mountain-view patio — reservations strongly suggested.</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="trip-guide-card">
+                      <p class="trip-guide-emoji mb-1">🌮</p>
+                      <h3 class="h6">El Jefe at The Saguaro</h3>
+                      <p class="small mb-2"><a class="text-link-desert" href="https://www.thesaguaro.com/palm-springs/dining/el-jefe/" target="_blank" rel="noopener noreferrer">1800 E Palm Canyon Dr</a></p>
+                      <p class="small mb-0">Mexican street food, strong happy hour, Taco Tuesday deals — casual and fun.</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="trip-guide-card">
+                      <p class="trip-guide-emoji mb-1">🥪</p>
+                      <h3 class="h6">Sherman&apos;s Deli &amp; Bakery</h3>
+                      <p class="small mb-2"><a class="text-link-desert" href="https://www.shermansdeli.com/" target="_blank" rel="noopener noreferrer">401 E Tahquitz Canyon Way</a> · Est. 1963</p>
+                      <p class="small mb-0">Classic NYC deli in the desert — the Reuben is legendary. Hearty lunch stop (separate from our El Paseo list below).</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="trip-guide-footnote mt-3 mb-0">Events, hikes &amp; day trips for the same week live in <strong>Dry Heat &amp; Detours</strong> → Trip Guide tabs.</p>
+              </div>
+
+              <h3 class="h5 display-font text-secondary mb-3">Rancho Mirage &amp; valley list · ~mi from the hotel</h3>
+              <ol class="restaurant-list">
+                <li><a class="rest-name text-link-desert" href="https://www.pinziminipalmsprings.com/" target="_blank" rel="noopener noreferrer">Pinzimini</a><span class="rest-metrics">~1.5 mi · <a href="https://www.tripadvisor.com/Search?q=Pinzimini+Westin+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">Westin Rancho Mirage · Coastal Italian / resort dining</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.opentable.com/r/the-edge-steakhouse-rancho-mirage" target="_blank" rel="noopener noreferrer">The Edge Steakhouse</a><span class="rest-metrics">~2.5 mi · <a href="https://www.tripadvisor.com/Search?q=The+Edge+Steakhouse+Ritz+Carlton+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.6</a></span><span class="rest-desc">Ritz-Carlton, Rancho Mirage · Steaks &amp; valley views</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.mastrosrestaurants.com/location/mastros-steakhouse-palm-desert" target="_blank" rel="noopener noreferrer">Mastro&apos;s Steakhouse</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=Mastros+Steakhouse+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.5</a></span><span class="rest-desc">El Paseo, Palm Desert · Classic upscale steakhouse</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.mitchsonelpaseo.com/" target="_blank" rel="noopener noreferrer">Mitch&apos;s on El Paseo</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=Mitchs+on+El+Paseo+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.6</a></span><span class="rest-desc">Palm Desert · Seafood, sushi &amp; steaks</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.wildestrestaurant.com/" target="_blank" rel="noopener noreferrer">Wildest Restaurant + Bar</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=Wildest+Restaurant+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">El Paseo · Chef-driven California plates</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.cuistotrestaurant.com/" target="_blank" rel="noopener noreferrer">Cuistot</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=Cuistot+Palm+Desert+El+Paseo" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.7</a></span><span class="rest-desc">El Paseo · French fine dining &amp; wine list</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.chezpierrebistro.com/" target="_blank" rel="noopener noreferrer">Chez Pierre Bistro</a><span class="rest-metrics">~6 mi · <a href="https://www.tripadvisor.com/Search?q=Chez+Pierre+Bistro+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">Palm Desert · French bistro &amp; brunch weekends</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.williesrm.com/" target="_blank" rel="noopener noreferrer">Willie&apos;s Modern Fare</a><span class="rest-metrics">~3 mi · <a href="https://www.tripadvisor.com/Search?q=Willies+Modern+Fare+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.5</a></span><span class="rest-desc">Rancho Mirage · Modern European / farm-to-table vibe</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.opentable.com/r/catalan-mediterranean-cuisine-rancho-mirage" target="_blank" rel="noopener noreferrer">Catalan Mediterranean Cuisine</a><span class="rest-metrics">~3 mi · <a href="https://www.tripadvisor.com/Search?q=Catalan+Mediterranean+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.6</a></span><span class="rest-desc">Rancho Mirage · Mediterranean &amp; tapas-style</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.wallysdesertturtle.com/" target="_blank" rel="noopener noreferrer">Wally&apos;s Desert Turtle</a><span class="rest-metrics">~3 mi · <a href="https://www.tripadvisor.com/Search?q=Wallys+Desert+Turtle+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.7</a></span><span class="rest-desc">Rancho Mirage · Long-running fine-dining favorite</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Acqua+California+Bistro+Rancho+Mirage+CA" target="_blank" rel="noopener noreferrer">Acqua California Bistro</a><span class="rest-metrics">~3 mi · <a href="https://www.tripadvisor.com/Search?q=Acqua+California+Bistro+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.3</a></span><span class="rest-desc">Rancho Mirage (The River) · California bistro &amp; patio</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.flemingssteakhouse.com/locations/ca/rancho-mirage/" target="_blank" rel="noopener noreferrer">Fleming&apos;s Prime Steakhouse</a><span class="rest-metrics">~2.5 mi · <a href="https://www.tripadvisor.com/Search?q=Flemings+Steakhouse+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">Rancho Mirage · Steak &amp; wine bar</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.aguacalientecasinos.com/dining/steakhouse/" target="_blank" rel="noopener noreferrer">The Steakhouse</a><span class="rest-metrics">~3 mi · <a href="https://www.tripadvisor.com/Search?q=The+Steakhouse+Agua+Caliente+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.6</a></span><span class="rest-desc">Agua Caliente Rancho Mirage · Forbes Four-Star steakhouse</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.sullivanssteakhouse.com/location/palm-desert/" target="_blank" rel="noopener noreferrer">Sullivan&apos;s Steakhouse</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=Sullivans+Steakhouse+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">Palm Desert · Steak &amp; live music nights</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.mammagina.com/" target="_blank" rel="noopener noreferrer">Ristorante Mamma Gina</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=Mamma+Gina+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">Palm Desert · Italian on El Paseo</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.pacificaseafood.com/" target="_blank" rel="noopener noreferrer">Pacifica Seafood Restaurant</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=Pacifica+Seafood+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">Palm Desert · Seafood with Wine Spectator–recognized list</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.billyreeds.com/" target="_blank" rel="noopener noreferrer">Billy Reed&apos;s Restaurant</a><span class="rest-metrics">~6 mi · <a href="https://www.tripadvisor.com/Search?q=Billy+Reeds+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.3</a></span><span class="rest-desc">Palm Desert · American comfort &amp; bakery</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.stuftpizza.com/" target="_blank" rel="noopener noreferrer">Stuft Pizza Bar &amp; Grill</a><span class="rest-metrics">~6 mi · <a href="https://www.tripadvisor.com/Search?q=Stuft+Pizza+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.2</a></span><span class="rest-desc">Palm Desert · Family-friendly pizza &amp; sports</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.jillianssportsgrill.com/" target="_blank" rel="noopener noreferrer">Jillian&apos;s</a><span class="rest-metrics">~3 mi · <a href="https://www.tripadvisor.com/Search?q=Jillians+Rancho+Mirage" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.2</a></span><span class="rest-desc">Rancho Mirage · Sports grill &amp; casual dinners</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.lgprimesteakhouse.com/" target="_blank" rel="noopener noreferrer">LG&apos;s Prime Steakhouse</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=LG+Prime+Steakhouse+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.5</a></span><span class="rest-desc">Palm Desert · Prime steaks &amp; martinis</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.shermansdeli.com/" target="_blank" rel="noopener noreferrer">Sherman&apos;s Deli &amp; Bakery</a><span class="rest-metrics">~6.5 mi · <a href="https://www.tripadvisor.com/Search?q=Shermans+Deli+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">Palm Desert · Huge sandwiches, breakfast &amp; bakery case</span></li>
+              </ol>
+
+              <h3 class="rest-subheading display-font mt-4 pt-4 mb-3">Breweries &amp; taprooms</h3>
+              <ol class="restaurant-list">
+                <li><a class="rest-name text-link-desert" href="https://www.laquintabrewing.com/" target="_blank" rel="noopener noreferrer">La Quinta Brewing Co.</a><span class="rest-metrics">~5.5 mi (Palm Desert taproom) · <a href="https://www.tripadvisor.com/Search?q=La+Quinta+Brewing+Company+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.5</a></span><span class="rest-desc">Technology Dr taproom · also Old Town La Quinta &amp; Palm Springs taprooms — award-winning valley brewery</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.desertbeercompany.com/" target="_blank" rel="noopener noreferrer">Desert Beer Co.</a><span class="rest-metrics">~5.5 mi (Palm Desert) · <a href="https://www.tripadvisor.com/Search?q=Desert+Beer+Company+Palm+Desert" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.5</a></span><span class="rest-desc">Country Club Dr · craft taps, events &amp; to-go; also Indio location</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.luchadorbrew.com/" target="_blank" rel="noopener noreferrer">Luchador Brewing Company</a><span class="rest-metrics">~9 mi · <a href="https://www.tripadvisor.com/Search?q=Luchador+Brewing+Company+Cathedral+City" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.5</a></span><span class="rest-desc">Cathedral City · in-house beers &amp; seltzers, Mexican street-food vibe</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.cvbco.com/" target="_blank" rel="noopener noreferrer">Coachella Valley Brewing Co.</a><span class="rest-metrics">~7 mi · <a href="https://www.tripadvisor.com/Search?q=Coachella+Valley+Brewing+Company+Thousand+Palms" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor">★ 4.4</a></span><span class="rest-desc">Thousand Palms · farm-to-glass ingredients, flights &amp; seasonal taps</span></li>
+                <li><a class="rest-name text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=craft+beer+taproom+Palm+Springs+CA" target="_blank" rel="noopener noreferrer">Downtown Palm Springs</a><span class="rest-metrics">~15 mi (area) · <a href="https://www.tripadvisor.com/Search?q=craft+beer+bars+Palm+Springs+California" target="_blank" rel="noopener noreferrer" class="text-link-desert" title="TripAdvisor search (not one venue)">TripAdvisor</a></span><span class="rest-desc">Maps search for beer bars &amp; guest taps — pick a spot, then check its ★ on TripAdvisor</span></li>
+              </ol>
+
+              <p class="small text-muted mt-3 mb-0">More tacos, date shakes, cafés &amp; beer bars on El Paseo &amp; Highway 111. 🌮🍺</p>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="pane-main-detours" role="tabpanel" aria-labelledby="tab-main-detours" tabindex="0">
+            <section id="detours" class="content-section pt-0 border-0">
+              <h2 class="section-title mb-3">Dry Heat &amp; Detours</h2>
+              <p class="text-secondary mb-3" style="font-size: 0.98rem;">Field notes for Palm Desert, Palm Springs &amp; the Coachella Valley — hikes, shows, and day-trip ideas. Confirm hours, fees &amp; reservations before you go.</p>
+
+              <div class="alert alert-warning border-0 shadow-sm mb-4" role="alert">
+                <strong>⚠️ Indian Canyons closure:</strong> Tribal lands at <strong>Indian Canyons</strong> are <strong>closed March 29–April 5</strong> (verify on <a class="alert-link" href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer">indian-canyons.com</a>). Plan canyon time on <strong>March 27 or 28</strong> only — or use <strong>Tahquitz Canyon</strong> (still open) for a waterfall fix that week.
+              </div>
+
+              <div class="trip-guide-banner mb-4">
+                <h3 class="h4 display-font mb-2">🌴 Palm Springs Trip Guide · March 27–April 1, 2026</h3>
+                <p class="small text-secondary mb-3">Desert adventure meets chill vacation — the stuff we&apos;d text you if we lived here. Use the tabs below; brunch &amp; dinner deep-dives sit in the <strong>Restaurants</strong> tab.</p>
+                <ul class="nav nav-pills trip-guide-subtabs mb-0" id="tripGuideTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tg-tab-events" data-bs-toggle="tab" data-bs-target="#tg-pane-events" type="button" role="tab" aria-controls="tg-pane-events" aria-selected="true">🎪 Events</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tg-tab-outdoor" data-bs-toggle="tab" data-bs-target="#tg-pane-outdoor" type="button" role="tab" aria-controls="tg-pane-outdoor" aria-selected="false">🥾 Outdoor</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tg-tab-arts" data-bs-toggle="tab" data-bs-target="#tg-pane-arts" type="button" role="tab" aria-controls="tg-pane-arts" aria-selected="false">🎨 Arts</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tg-tab-daytrips" data-bs-toggle="tab" data-bs-target="#tg-pane-daytrips" type="button" role="tab" aria-controls="tg-pane-daytrips" aria-selected="false">🚗 Day trips</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tg-tab-eat" data-bs-toggle="tab" data-bs-target="#tg-pane-eat" type="button" role="tab" aria-controls="tg-pane-eat" aria-selected="false">🍽️ Eat &amp; Drink</button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-content mb-4" id="tripGuideTabContent">
+                <div class="tab-pane fade show active" id="tg-pane-events" role="tabpanel" aria-labelledby="tg-tab-events" tabindex="0">
+                  <div class="trip-guide-event-card">
+                    <p class="fw-bold mb-1">🎡 VillageFest</p>
+                    <p class="small mb-0">Every <strong>Thursday</strong> · 6–10pm · Palm Canyon Dr · <strong>FREE</strong> · Street fair with food, art, live music &amp; vendors — dog-friendly and very &quot;we&apos;re in Palm Springs now.&quot; You can hit it on <strong>3/27</strong> (arrival night!) <strong>and</strong> <strong>4/1</strong>.</p>
+                  </div>
+                  <div class="trip-guide-event-card">
+                    <p class="fw-bold mb-1">🎹 David Foster &amp; Katharine McPhee</p>
+                    <p class="small mb-1">Fri <strong>3/27</strong> · 8pm · The Show – Agua Caliente Casino, Rancho Mirage</p>
+                    <p class="small mb-0">Tickets from ~$70 · Grammy-winning composer + American Idol star — intimate room energy. <a class="text-link-desert" href="https://www.ticketmaster.com/search?q=David+Foster+Katharine+McPhee+Palm+Springs" target="_blank" rel="noopener noreferrer">Ticketmaster</a> · <a class="text-link-desert" href="https://www.aguacalientecasinos.com/entertainment/" target="_blank" rel="noopener noreferrer">Agua Caliente shows</a></p>
+                  </div>
+                  <div class="trip-guide-event-card">
+                    <p class="fw-bold mb-1">🎤 Drake Bell</p>
+                    <p class="small mb-0">Fri <strong>3/27</strong> · Agua Caliente Casino Palm Springs — check <a class="text-link-desert" href="https://www.ticketmaster.com/search?q=Drake+Bell+Palm+Springs" target="_blank" rel="noopener noreferrer">Ticketmaster</a> for times &amp; tickets.</p>
+                  </div>
+                  <div class="trip-guide-event-card">
+                    <p class="fw-bold mb-1">💜 Marshall Charloff &amp; The Purple xPeRIeNCE</p>
+                    <p class="small mb-1">Sun <strong>3/29</strong> · Plaza Theatre</p>
+                    <p class="small mb-0">Prince tribute — <a class="text-link-desert" href="https://www.ticketmaster.com/search?q=Marshall+Charloff+Plaza+Theatre+Palm+Springs" target="_blank" rel="noopener noreferrer">Ticketmaster</a> · <a class="text-link-desert" href="https://www.plazatheatre.org/" target="_blank" rel="noopener noreferrer">plazatheatre.org</a></p>
+                  </div>
+                  <div class="trip-guide-event-card">
+                    <p class="fw-bold mb-1">✨ Billy Porter</p>
+                    <p class="small mb-1">Wed <strong>4/1</strong> · 7:30pm · Plaza Theatre, 128 S Palm Canyon Dr</p>
+                    <p class="small mb-0">From ~$94 · Pre-show dinner add-ons with partner restaurants (e.g. FARM, Lulu California Bistro, Clandestino) — snag tickets early. <a class="text-link-desert" href="https://www.ticketmaster.com/search?q=Billy+Porter+Palm+Springs" target="_blank" rel="noopener noreferrer">Ticketmaster</a></p>
+                  </div>
+                  <div class="trip-guide-event-card mb-0">
+                    <p class="fw-bold mb-1">🏒 LGBTQ+ Hockey Tournament</p>
+                    <p class="small mb-0">March <strong>27–29</strong> · <a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Berger+Iceplex+Palm+Springs+CA" target="_blank" rel="noopener noreferrer">Berger Iceplex</a> · Teams from across North America — loud, welcoming, fun to catch if you&apos;re nearby.</p>
+                  </div>
+                  <p class="small text-muted mt-3 mb-0">Also peek <a class="text-link-desert" href="https://www.mccallumtheatre.com/" target="_blank" rel="noopener noreferrer">McCallum Theatre</a> &amp; <a class="text-link-desert" href="https://www.acrisurearena.com/" target="_blank" rel="noopener noreferrer">Acrisure Arena</a> for anything else that week.</p>
+                </div>
+
+                <div class="tab-pane fade" id="tg-pane-outdoor" role="tabpanel" aria-labelledby="tg-tab-outdoor" tabindex="0">
+                  <div class="trip-guide-card mb-3">
+                    <p class="trip-guide-emoji mb-1">🚠</p>
+                    <h3 class="h6">Palm Springs Aerial Tramway</h3>
+                    <p class="small mb-1"><a class="text-link-desert" href="https://www.pstramway.com/" target="_blank" rel="noopener noreferrer">1 Tram Way</a> · Adults ~$41 · kids ~$27.50 (confirm current rates)</p>
+                    <p class="small mb-2"><strong>Book ahead</strong> — spring break crowds are real. World&apos;s largest rotating tram car; ~10 min to 8,516 ft. Pack layers — often <strong>30–40°F cooler</strong> on top. 50+ miles of trails up there.</p>
+                    <ul class="small mb-0">
+                      <li><strong>Easy:</strong> Desert View Trail (~1.5 mi, big valley views)</li>
+                      <li><strong>Moderate:</strong> Round Valley Loop (~4.5 mi, Jeffrey pines &amp; granite)</li>
+                      <li><strong>Hard:</strong> San Jacinto Peak (~11 mi RT — serious SoCal summit day)</li>
+                    </ul>
+                  </div>
+                  <div class="trip-guide-card mb-3">
+                    <p class="trip-guide-emoji mb-1">🌴</p>
+                    <h3 class="h6">Indian Canyons</h3>
+                    <p class="small mb-1"><a class="text-link-desert" href="https://www.indian-canyons.com/" target="_blank" rel="noopener noreferrer">38520 S Palm Canyon Dr</a> · ~$12 adults / ~$6 kids · 8am–5pm</p>
+                    <p class="small mb-0"><strong>Closed March 29–April 5</strong> — so for our trip window, aim for <strong>March 27 or 28</strong> only. Palm Canyon (huge natural palm oasis), Andreas (ancient mortars + plant diversity), Murray (seasonal waterfall, the Seven Sisters). Free guided hikes Fri–Sun at 10am &amp; 1pm when open.</p>
+                  </div>
+                  <div class="trip-guide-card mb-3">
+                    <p class="trip-guide-emoji mb-1">💧</p>
+                    <h3 class="h6">Tahquitz Canyon</h3>
+                    <p class="small mb-1"><a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Tahquitz+Canyon+Visitor+Center+Palm+Springs+CA" target="_blank" rel="noopener noreferrer">500 W Mesquite Ave</a> (Agua Caliente) · ~$15 adults / ~$7 kids · 7:30am–5pm (last hike ~3:30pm)</p>
+                    <p class="small mb-0"><strong>Stays open</strong> while Indian Canyons is closed — ~2 mi loop to a 60-ft waterfall + rock art. Minutes from downtown.</p>
+                  </div>
+                  <p class="fw-bold small mb-2">More outdoor wins</p>
+                  <ul class="small">
+                    <li><strong>South Lykken Trail</strong> (Palm Springs) — shorter foothill hike with city views; check parking rules.</li>
+                    <li><strong>Coachella Valley Preserve</strong> — free palm oasis near Thousand Palms; flat, mellow. <a class="text-link-desert" href="https://www.blm.gov/visit/coachella-valley-preserve" target="_blank" rel="noopener noreferrer">BLM</a></li>
+                    <li><strong>Joshua Tree NP</strong> — see Day trips tab for spring-break timing tips.</li>
+                  </ul>
+                  <p class="fw-bold small mt-3 mb-1">Practical desert playbook</p>
+                  <ul class="small mb-0">
+                    <li>Hydration &amp; sun — more water than feels necessary; hats even when breezy.</li>
+                    <li>Tram, tribal lands &amp; national park = separate fees — budget accordingly.</li>
+                    <li>Joshua Tree: no gas/food/water <em>inside</em> the park — pack snacks (Brooke &amp; Caelyn vote yes on a checklist).</li>
+                  </ul>
+                </div>
+
+                <div class="tab-pane fade" id="tg-pane-arts" role="tabpanel" aria-labelledby="tg-tab-arts" tabindex="0">
+                  <div class="row row-cols-1 g-3">
+                    <div class="col">
+                      <div class="trip-guide-card">
+                        <p class="trip-guide-emoji mb-1">🖼️</p>
+                        <h3 class="h6">Palm Springs Art Museum</h3>
+                        <p class="small mb-0"><a class="text-link-desert" href="https://www.psmuseum.org/" target="_blank" rel="noopener noreferrer">101 Museum Dr</a> · Thurs noon–8pm (<strong>FREE</strong> evening!), Fri–Sun 10am–5pm. New show opens <strong>March 28</strong> (runs through Oct 18). Docent tours daily at 2pm. Don&apos;t skip the <strong>Architecture &amp; Design Center</strong> for mid-mod deep cuts.</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="trip-guide-card">
+                        <p class="trip-guide-emoji mb-1">🧭</p>
+                        <h3 class="h6">Desert X</h3>
+                        <p class="small mb-0"><strong>FREE</strong> · Outdoor art across the valley · Grab a map at the Thompson Hotel hub (<a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=414+N+Palm+Canyon+Dr+Palm+Springs" target="_blank" rel="noopener noreferrer">414 N Palm Canyon Dr</a>) — Fri 2–5pm, Sat–Sun 10am–5pm. Eleven large installations from Palm Springs to Thousand Palms. Download the free app for GPS.</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="trip-guide-card">
+                        <p class="trip-guide-emoji mb-1">✈️</p>
+                        <h3 class="h6">Palm Springs Air Museum</h3>
+                        <p class="small mb-0">Vintage warbirds + optional rides — surprisingly great half-day. <a class="text-link-desert" href="https://www.psairmuseum.org/" target="_blank" rel="noopener noreferrer">psairmuseum.org</a></p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="trip-guide-card mb-0">
+                        <p class="trip-guide-emoji mb-1">🎭</p>
+                        <h3 class="h6">Also bookmark</h3>
+                        <p class="small mb-0"><a class="text-link-desert" href="https://cvrep.org/" target="_blank" rel="noopener noreferrer">CVRep</a> (Cathedral City theater) if the group wants a play night.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="tg-pane-daytrips" role="tabpanel" aria-labelledby="tg-tab-daytrips" tabindex="0">
+                  <div class="trip-guide-card mb-3">
+                    <p class="trip-guide-emoji mb-1">🪨</p>
+                    <h3 class="h6">Joshua Tree National Park</h3>
+                    <p class="small mb-1">~1 hr · ~$30/vehicle (7 days) · open 24/7 · <a class="text-link-desert" href="https://www.nps.gov/jotr/" target="_blank" rel="noopener noreferrer">nps.gov/jotr</a></p>
+                    <p class="small mb-2"><strong>Spring break playbook:</strong> Arrive before 8am if you can; try the <strong>North Entrance (Twentynine Palms)</strong> for lighter crowds vs the West. No food/water/gas inside — stock up first. Hits: Hidden Valley, Skull Rock, Cholla Cactus Garden, Keys View (Salton Sea / fault views on clear days).</p>
+                  </div>
+                  <div class="trip-guide-card mb-3">
+                    <p class="trip-guide-emoji mb-1">🦕</p>
+                    <h3 class="h6">Borrego Springs / Anza-Borrego</h3>
+                    <p class="small mb-0">~1.5 hr · <strong>FREE</strong> · 100+ giant metal creatures (Ricardo Breceda) scattered across the desert — mammoths, dinos, serpents. Weird, wonderful photo ops.</p>
+                  </div>
+                  <div class="trip-guide-card mb-3">
+                    <p class="trip-guide-emoji mb-1">🌊</p>
+                    <h3 class="h6">Salton Sea + eastern desert loop</h3>
+                    <p class="small mb-0">~1–1.5 hr · Ghost-town energy, surreal shoreline, folk art, and the Mecca Hills <strong>Ladder Canyon</strong> hike (~7.2 km, actual ladders in the slot — not for tiny kids). Combine for a full quirky day.</p>
+                  </div>
+                  <p class="fw-bold small mb-2">Classic add-ons</p>
+                  <ul class="small mb-0">
+                    <li><strong>Idyllwild</strong> — pines &amp; toy shops ~1+ hr; cooler air.</li>
+                    <li><strong>Cabazon Dinosaurs</strong> — fast kitschy stop off I-10 with kids.</li>
+                    <li><strong>Living Desert</strong> (Palm Desert) — giraffes &amp; splash pad — <a class="text-link-desert" href="https://www.livingdesert.org/" target="_blank" rel="noopener noreferrer">livingdesert.org</a></li>
+                  </ul>
+                </div>
+
+                <div class="tab-pane fade" id="tg-pane-eat" role="tabpanel" aria-labelledby="tg-tab-eat" tabindex="0">
+                  <div class="trip-guide-card">
+                    <p class="trip-guide-emoji mb-2">🍽️</p>
+                    <p class="mb-3">We put Cheeky&apos;s, Birba, Bar Cecil, Workshop, Copley&apos;s, El Jefe &amp; Shermans (Tahquitz Canyon Way) in the <strong>Restaurants</strong> tab so it sits next to your Rancho Mirage / El Paseo mile list.</p>
+                    <button type="button" class="btn btn-sm px-3 py-2 fw-bold border-0" id="btn-trip-guide-to-restaurants" style="background: var(--terracotta); color: #fff;">Open Restaurants tab → Eat &amp; Drink guide</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar-research-panel px-0 pb-2 border-top pt-4">
+                <h4 class="display-font">Still on the list</h4>
+                <ul class="small mb-3">
+                  <li><strong>Moorten Botanical Garden</strong> — tiny cactus wonderland. <a class="text-link-desert" href="https://www.moortengarden.com/" target="_blank" rel="noopener noreferrer">moortengarden.com</a></li>
+                  <li><strong>El Paseo</strong> — stroll, tacos, ice cream (pairs with your restaurant picks).</li>
+                </ul>
+                <!-- Pat Miller proofread this. Rico Foster proofread the snack list (it was mostly chips). -->
+                <p class="research-note mb-0">Compiled for MiFoSo Spring Break &apos;26. Hours, road work &amp; lineups change — verify the week you go.</p>
+              </div>
+              <p class="small text-muted mt-4 mb-0">&quot;Dry Heat &amp; Detours&quot; — because the best stories start where the pool ends. 🌵</p>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="pane-main-golf" role="tabpanel" aria-labelledby="tab-main-golf" tabindex="0">
+            <section id="golf" class="content-section pt-0 border-0">
+              <h2 class="section-title mb-3">⛳ Golf near Mission Hills</h2>
+              <p class="text-secondary mb-3" style="font-size: 0.98rem;">Rough guide for <strong>Westin Mission Hills Resort Villas</strong> (Rancho Mirage / Palm Desert) — resort courses, public tracks, and desert golf reality checks. <strong>Green fees swing wildly</strong> by season, day, and tee time; always confirm on the course website or pro shop before you book.</p>
+              <div class="alert alert-light border border-secondary-subtle mb-4" role="note">
+                <strong>Desert golf tips:</strong> Book early — spring break weeks fill. Bring extra balls (wind &amp; water); carry water even on a cart; first-tee times beat peak heat. Collared shirts &amp; soft spikes are the usual dress-code baseline; flip-flops are a no-go at most clubs.
+              </div>
+
+              <h3 class="h5 display-font text-secondary mb-3">Walk out the hotel door (or close)</h3>
+              <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">Mission Hills North &amp; South</h3>
+                    <p class="golf-meta mb-2">Rancho Mirage · ~36 holes · Pete Dye / Gary Player designs</p>
+                    <p class="small mb-2">The resort&apos;s home courses — rolling fairways, mountains, lots of water. <strong>Guests</strong> often get tee-time access via the Westin / Marriott; check current packages &amp; booking rules when you reserve the villa.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.marriott.com/en-us/hotels/psprw-the-westin-mission-hills-resort-and-villas/golf/" target="_blank" rel="noopener noreferrer">Westin Mission Hills golf</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">The S at Rancho Mirage</h3>
+                    <p class="golf-meta mb-2">Rancho Mirage · Private club · classic desert layout</p>
+                    <p class="small mb-2">Private club near the valley&apos;s resort corridor — <strong>guest-of-member / invited play</strong> only (no public tee sheet). Call ahead if someone in the group has a connection.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.thesresort.com/" target="_blank" rel="noopener noreferrer">thesresort.com</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">Shadow Ridge Golf Club</h3>
+                    <p class="golf-meta mb-2">Palm Desert · Marriott Vacation Club · Nicklaus design</p>
+                    <p class="small mb-2">Resort-adjacent course; palm &amp; mountain views. Often booked through <strong>Marriott Golf</strong> or resort partners — verify public vs guest availability.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.marriott.com/en-us/hotels/psmvr-shadow-ridge-golf-club/overview/" target="_blank" rel="noopener noreferrer">Shadow Ridge overview</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="h5 display-font text-secondary mb-3">Public &amp; daily-fee favorites (short drive)</h3>
+              <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">Indian Wells Golf Resort</h3>
+                    <p class="golf-meta mb-2">Indian Wells · Players &amp; Celebrity courses · ~15–20 min</p>
+                    <p class="small mb-2">PGA Tour-quality conditioning — wide fairways, big bunkers, big views. <strong>Tournament / TV pedigree</strong> — expect premium pricing on peak weekends. Clubhouse &amp; practice facilities are excellent.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.indianwellsgolfresort.com/" target="_blank" rel="noopener noreferrer">indianwellsgolfresort.com</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">Desert Willow Golf Resort</h3>
+                    <p class="golf-meta mb-2">Palm Desert · Firecliff &amp; Mountain View · ~10–15 min</p>
+                    <p class="small mb-2">Municipal-style resort with two very different nines — Firecliff is the tougher, desert-exposed test; Mountain View is more forgiving. Popular with locals &amp; visitors.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.desertwillow.com/" target="_blank" rel="noopener noreferrer">desertwillow.com</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">Classic Club</h3>
+                    <p class="golf-meta mb-2">Palm Desert · Arnold Palmer design · ~10–15 min</p>
+                    <p class="small mb-2">Elevated tees, big views, generous landing areas. Often rated among the <strong>most scenic public</strong> rounds in the valley — fees reflect that.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.classicclubgolf.com/" target="_blank" rel="noopener noreferrer">classicclubgolf.com</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">SilverRock Resort</h3>
+                    <p class="golf-meta mb-2">La Quinta · Arnold Palmer · ~25–35 min</p>
+                    <p class="small mb-2">Municipal course with big mountain backdrop and a serious championship feel. <strong>HQ for the PGA Tour&apos;s American Express</strong> — conditioning is usually stellar.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.laquintaca.gov/departments/silverrock-resort" target="_blank" rel="noopener noreferrer">City of La Quinta — SilverRock</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">PGA West (public courses)</h3>
+                    <p class="golf-meta mb-2">La Quinta · Stadium, Nicklaus Tournament, Mountain, others · ~25–40 min</p>
+                    <p class="small mb-2">Bucket-list desert golf — especially the <strong>Stadium Course</strong> (PGA Tour history). Multiple courses &amp; price points; some tracks are private — filter for &quot;public&quot; when booking.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.pgawest.com/" target="_blank" rel="noopener noreferrer">pgawest.com</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="golf-course-card">
+                    <h3 class="h6">Marriott Desert Springs</h3>
+                    <p class="golf-meta mb-2">Palm Desert · Palm &amp; Valley courses · ~10–15 min</p>
+                    <p class="small mb-2">Resort golf with water &amp; palm scenery — great if you&apos;re pairing golf with a spa or dinner. Access often through <strong>hotel guests or tee-time portals</strong>.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.marriott.com/en-us/hotels/psmds-jw-marriott-desert-springs-resort-and-spa/golf/" target="_blank" rel="noopener noreferrer">JW Desert Springs golf</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="h5 display-font text-secondary mb-2">More ideas</h3>
+              <ul class="small">
+                <li><strong>Escena Golf Club</strong> (Palm Springs) — Nicklaus design, open views &amp; wind. <a class="text-link-desert" href="https://www.escenagolf.com/" target="_blank" rel="noopener noreferrer">escenagolf.com</a></li>
+                <li><strong>Tahquitz Creek Golf Resort</strong> (Palm Springs) — 36 holes, often friendlier on the wallet than big-name resort tracks. <a class="text-link-desert" href="https://www.tahquitzgolf.com/" target="_blank" rel="noopener noreferrer">tahquitzgolf.com</a></li>
+                <li><strong>Indian Palms</strong> (Indio) — relaxed 27-hole layout, good for a casual / twilight round. <a class="text-link-desert" href="https://www.indianpalms.com/" target="_blank" rel="noopener noreferrer">indianpalms.com</a></li>
+              </ul>
+              <p class="research-note mb-0">Fees, cart rules, and overseed / maintenance schedules change — call ahead. Not affiliated with any course listed.</p>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="pane-main-hoops" role="tabpanel" aria-labelledby="tab-main-hoops" tabindex="0">
+            <section id="hoops" class="content-section pt-0 border-0">
+              <h2 class="section-title mb-3">🏀 Pickup &amp; public courts</h2>
+              <p class="text-secondary mb-3" style="font-size: 0.98rem;">Where to get shots up in the <strong>Coachella Valley</strong> — mostly <strong>outdoor public parks</strong> (free or low-cost), plus <strong>gym</strong> options if you want indoor hoops. Hours, pickup traffic, and net quality vary — bring water &amp; a ball.</p>
+              <div class="alert alert-light border border-secondary-subtle mb-4" role="note">
+                <strong>Reality check:</strong> March afternoons are hot. Courts near playgrounds &amp; schools get busy after 4pm. Be cool: call &quot;next&quot; on busy runs, share the court, and don&apos;t leave valuables in the car.
+              </div>
+
+              <h3 class="h5 display-font text-secondary mb-3">Outdoor — Palm Desert &amp; Rancho Mirage</h3>
+              <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+                <div class="col">
+                  <div class="hoops-spot-card">
+                    <h3 class="h6">Palm Desert Civic Center Park</h3>
+                    <p class="golf-meta mb-2">43930 San Pablo Ave, Palm Desert · ~10–15 min</p>
+                    <p class="small mb-2">Big community park with <strong>multiple outdoor full courts</strong> (often lit at night). Central, easy parking, and a solid bet for pickup when locals are out. Adjacent to the library &amp; amphitheater — check the city site for events that might crowd parking.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.cityofpalmdesert.org/Home/Components/FacilityDirectory/FacilityDirectory/26/3516" target="_blank" rel="noopener noreferrer">City of Palm Desert — Civic Center Park</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="hoops-spot-card">
+                    <h3 class="h6">Freedom Park</h3>
+                    <p class="golf-meta mb-2">Liberty Dr &amp; Freedom Way area, Palm Desert</p>
+                    <p class="small mb-2">Neighborhood park with <strong>outdoor courts</strong> — quieter than Civic Center, good for a casual shootaround or half-court games.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Freedom+Park+Palm+Desert+CA" target="_blank" rel="noopener noreferrer">Maps → Freedom Park</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="hoops-spot-card">
+                    <h3 class="h6">Joe Mann Park</h3>
+                    <p class="golf-meta mb-2">Rancho Mirage · ~5–10 min</p>
+                    <p class="small mb-2">Smaller park with <strong>outdoor courts</strong> — handy if you&apos;re staying near Mission Hills and want a quick run without driving to Palm Desert.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Joe+Mann+Park+Rancho+Mirage+CA" target="_blank" rel="noopener noreferrer">Maps → Joe Mann Park</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="hoops-spot-card">
+                    <h3 class="h6">Whitewater Park</h3>
+                    <p class="golf-meta mb-2">Whitewater Pl, Rancho Mirage</p>
+                    <p class="small mb-2">Community park with <strong>outdoor court(s)</strong> — low-key option if you&apos;re nearby.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Whitewater+Park+Rancho+Mirage+CA" target="_blank" rel="noopener noreferrer">Maps → Whitewater Park</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="h5 display-font text-secondary mb-3">Outdoor — Palm Springs &amp; nearby</h3>
+              <div class="row row-cols-1 row-cols-md-2 g-3 mb-4">
+                <div class="col">
+                  <div class="hoops-spot-card">
+                    <h3 class="h6">Demuth Park</h3>
+                    <p class="golf-meta mb-2">Palm Springs · ~15–20 min</p>
+                    <p class="small mb-2">Large park with <strong>outdoor courts</strong> — popular with locals; good for evening runs when temps drop.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Demuth+Park+Palm+Springs+CA" target="_blank" rel="noopener noreferrer">Maps → Demuth Park</a></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="hoops-spot-card">
+                    <h3 class="h6">La Quinta Park / La Quinta Community Park</h3>
+                    <p class="golf-meta mb-2">La Quinta · ~20–30 min</p>
+                    <p class="small mb-2">Community parks with <strong>outdoor courts</strong> — worth a look if you&apos;re already east for golf or Old Town.</p>
+                    <p class="small mb-0"><a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=La+Quinta+Community+Park+CA" target="_blank" rel="noopener noreferrer">Maps → La Quinta parks</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="h5 display-font text-secondary mb-3">Indoor &amp; gym hoops</h3>
+              <ul class="small">
+                <li><strong>Desert Recreation District (DRD)</strong> — runs community centers &amp; gyms across the valley. Some locations offer <strong>open gym / basketball</strong> on a schedule (sometimes small drop-in fee vs membership). Start here: <a class="text-link-desert" href="https://www.myrecreationdistrict.com/" target="_blank" rel="noopener noreferrer">myrecreationdistrict.com</a> — call the center nearest your hotel for March hours.</li>
+                <li><strong>YMCA of the Desert</strong> — branches in Palm Springs, Desert Hot Springs, etc. — often have <strong>indoor courts</strong> for members; ask about guest / day passes. <a class="text-link-desert" href="https://www.ymcaofthedesert.org/" target="_blank" rel="noopener noreferrer">ymcaofthedesert.org</a></li>
+                <li><strong>Commercial gyms</strong> (LA Fitness, 24 Hour Fitness, etc.) — usually have indoor hoops for <strong>members</strong>; bring a friend with a guest pass if you have one.</li>
+              </ul>
+
+              <p class="research-note mb-0">Court conditions &amp; pickup culture change — always verify nets, lights, and hours. Not affiliated with any park or gym.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar: live scores (NCAA + optional MLB / NBA / NHL) -->
+      <aside id="sidebar-trip" class="col-12 col-lg-4 order-2 mb-4" aria-label="Trip sidebar: live sports scores">
+        <div class="card tool-card sidebar-tools-card site-sidebar-sticky">
+          <div class="card-header p-2 text-center">
+            <span class="fw-bold small">📊 Live scores</span>
+          </div>
+
+          <div id="sidebarScores">
+            <!-- Scores from ESPN public APIs; leagues chosen via checkboxes below -->
+            <div>
+              <div class="scores-controls border-bottom">
+                <div class="px-3 py-2 d-flex flex-wrap align-items-center justify-content-between gap-2">
+                  <span class="fw-bold text-white small">Pick leagues &amp; day</span>
+                  <span class="badge bg-light text-dark">Live</span>
+                </div>
+                <div class="px-3 pb-2">
+                  <span class="small text-white-50 d-block mb-1">Leagues (uncheck to hide)</span>
+                  <div class="d-flex flex-wrap gap-2 align-items-center">
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="checkbox" id="filter-ncaa-men" checked>
+                      <label class="form-check-label text-white small mb-0" for="filter-ncaa-men">NCAA men</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="checkbox" id="filter-ncaa-women" checked>
+                      <label class="form-check-label text-white small mb-0" for="filter-ncaa-women">NCAA women</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="checkbox" id="filter-mlb">
+                      <label class="form-check-label text-white small mb-0" for="filter-mlb">MLB</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="checkbox" id="filter-nba">
+                      <label class="form-check-label text-white small mb-0" for="filter-nba">NBA</label>
+                    </div>
+                    <div class="form-check form-check-inline mb-0">
+                      <input class="form-check-input" type="checkbox" id="filter-nhl">
+                      <label class="form-check-label text-white small mb-0" for="filter-nhl">NHL</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 pb-3 d-flex flex-wrap align-items-center gap-2">
+                  <label for="ncaa-date" class="small mb-0 text-white-50">Day</label>
+                  <input type="date" id="ncaa-date" class="form-control form-control-sm" style="max-width: 11rem;" title="Pick a day to load games">
+                  <button type="button" id="ncaa-today" class="btn btn-sm btn-outline-light">Today</button>
+                </div>
+              </div>
+              <div class="card-body p-2">
+                <p id="ncaa-status" class="small text-muted mb-2 px-1" role="status">Loading scores…</p>
+                <div id="ncaa-games" class="ncaa-games-panel">
+                  <div id="section-ncaa-men" class="mb-3 score-league-section">
+                    <h3 class="ncaa-board-heading text-uppercase fw-bold text-secondary mb-1 px-1">Men&apos;s NCAA</h3>
+                    <div id="ncaa-games-men"></div>
+                  </div>
+                  <div id="section-ncaa-women" class="mb-3 score-league-section">
+                    <h3 class="ncaa-board-heading text-uppercase fw-bold text-secondary mb-1 px-1">Women&apos;s NCAA</h3>
+                    <div id="ncaa-games-women"></div>
+                  </div>
+                  <div id="section-mlb" class="mb-3 score-league-section">
+                    <h3 class="ncaa-board-heading text-uppercase fw-bold text-secondary mb-1 px-1">MLB</h3>
+                    <div id="games-mlb"></div>
+                  </div>
+                  <div id="section-nba" class="mb-3 score-league-section">
+                    <h3 class="ncaa-board-heading text-uppercase fw-bold text-secondary mb-1 px-1">NBA</h3>
+                    <div id="games-nba"></div>
+                  </div>
+                  <div id="section-nhl" class="mb-3 score-league-section">
+                    <h3 class="ncaa-board-heading text-uppercase fw-bold text-secondary mb-1 px-1">NHL</h3>
+                    <div id="games-nhl"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer small text-muted">
+                Scores from ESPN&apos;s public APIs (about every 30s). Check the leagues you want so the list stays short. Not affiliated with ESPN or any league.
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="py-5 mt-2">
+    <div class="container text-center">
+      <p class="display-font fs-3 fw-bold mb-3">MiFoSo Spring Break &apos;26 — same sand, new memories 🏜️</p>
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+        <span class="badge rounded-pill border border-white text-white px-3 py-2" style="background:rgba(255,255,255,0.15)">☀️ 7 days of sun</span>
+        <span class="badge rounded-pill border border-white text-white px-3 py-2" style="background:rgba(255,255,255,0.15)">🏊 Pool chaos</span>
+        <span class="badge rounded-pill border border-white text-white px-3 py-2" style="background:rgba(255,255,255,0.15)">⛳ Desert golf</span>
+        <span class="badge rounded-pill border border-white text-white px-3 py-2" style="background:rgba(255,255,255,0.15)">🪨 Joshua Tree</span>
+        <span class="badge rounded-pill border border-white text-white px-3 py-2" style="background:rgba(255,255,255,0.15)">🏀 March Madness</span>
+        <span class="badge rounded-pill border border-white text-white px-3 py-2" style="background:rgba(255,255,255,0.15)">🌮 Desert eats</span>
+      </div>
+      <p class="small mb-2 opacity-90">Westin Mission Hills Resort Villas · Palm Springs, CA area · For private family use</p>
+      <a href="#hero-main" class="btn btn-outline-light btn-sm mt-1 mb-3">↑ Back to top</a>
+      <p class="small text-white mt-2 mb-0" style="font-size: 0.72rem; opacity: 0.75;">Honorary trip chaos: Pat Miller (spreadsheet guy) &amp; Rico Foster (vibes guy) — not liable for sunscreen math or playlist crimes.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top"
+    style="display:none;position:fixed;bottom:1.5rem;right:1.5rem;z-index:1050;
+    background:var(--terracotta);color:#fff;border:none;border-radius:50%;
+    width:2.8rem;height:2.8rem;font-size:1.1rem;box-shadow:0 2px 8px rgba(0,0,0,0.18);
+    cursor:pointer;align-items:center;justify-content:center;">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      // Trip starts March 27, 2026 (local midnight can feel odd; we use noon local for display)
+      var tripStart = new Date(2026, 2, 27, 12, 0, 0);
+      var el = document.getElementById("countdown");
+
+      function pad(n) {
+        return n < 10 ? "0" + n : String(n);
+      }
+
+      function tick() {
+        var now = new Date();
+        var ms = tripStart - now;
+        if (ms <= 0) {
+          el.textContent = "🎉 Trip time — have a blast!";
+          return;
+        }
+        var s = Math.floor(ms / 1000);
+        var days = Math.floor(s / 86400);
+        var hrs = Math.floor((s % 86400) / 3600);
+        var mins = Math.floor((s % 3600) / 60);
+        var secs = s % 60;
+        el.textContent =
+          days + "d " + pad(hrs) + "h " + pad(mins) + "m " + pad(secs) + "s";
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    })();
+
+    /** Easter egg — open DevTools (Console) if you dare */
+    (function () {
+      if (typeof console === "undefined" || !console.log) return;
+      console.log(
+        "%cMiFoSo &apos;26 intel",
+        "color:#c75b39;font-weight:bold;font-size:13px;font-family:system-ui"
+      );
+      console.log(
+        "Pat Miller swears he'll wake up for sunrise. Rico Foster swears he won't lose his room key. Place your bets."
+      );
+    })();
+
+    /** Back-to-top button */
+    (function () {
+      var btn = document.getElementById("back-to-top");
+      if (!btn) return;
+      window.addEventListener("scroll", function () {
+        var show = window.scrollY > 400;
+        btn.style.display = show ? "flex" : "none";
+      });
+      btn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    })();
+
+    /** Navbar links to Who / Itinerary / Gallery should show the Main tab (not Restaurants). */
+    (function () {
+      var mainTabBtn = document.getElementById("tab-main-trip");
+      if (!mainTabBtn || typeof bootstrap === "undefined") return;
+      document.querySelectorAll(".nav-link-main-tab").forEach(function (anchor) {
+        anchor.addEventListener("click", function () {
+          bootstrap.Tab.getOrCreateInstance(mainTabBtn).show();
+        });
+      });
+    })();
+
+    /** Trip Guide → jump to Eat & Drink cards in Restaurants tab */
+    (function () {
+      var btn = document.getElementById("btn-trip-guide-to-restaurants");
+      var restTabBtn = document.getElementById("tab-main-restaurants");
+      var eatBlock = document.getElementById("trip-guide-eat");
+      if (!btn || !restTabBtn || typeof bootstrap === "undefined") return;
+      btn.addEventListener("click", function () {
+        bootstrap.Tab.getOrCreateInstance(restTabBtn).show();
+        setTimeout(function () {
+          if (eatBlock) eatBlock.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 80);
+      });
+    })();
+
+    // NCAA + optional MLB / NBA / NHL: ESPN public JSON (CORS open). Unofficial; for personal use.
+    (function () {
+      var ESPN_MEN =
+        "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard";
+      var ESPN_WOMEN =
+        "https://site.api.espn.com/apis/site/v2/sports/basketball/womens-college-basketball/scoreboard";
+      var ESPN_MLB =
+        "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard";
+      var ESPN_NBA =
+        "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard";
+      var ESPN_NHL =
+        "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard";
+      var POLL_MS = 30000;
+
+      /** Each row: checkbox id, section wrapper id, games container id, API base URL, labels */
+      var LEAGUES = [
+        {
+          checkboxId: "filter-ncaa-men",
+          sectionId: "section-ncaa-men",
+          gamesId: "ncaa-games-men",
+          url: ESPN_MEN,
+          shortLabel: "men's NCAA",
+          emptyMsg: "No D-I men&apos;s games listed for this day.",
+        },
+        {
+          checkboxId: "filter-ncaa-women",
+          sectionId: "section-ncaa-women",
+          gamesId: "ncaa-games-women",
+          url: ESPN_WOMEN,
+          shortLabel: "women's NCAA",
+          emptyMsg: "No D-I women&apos;s games listed for this day.",
+        },
+        {
+          checkboxId: "filter-mlb",
+          sectionId: "section-mlb",
+          gamesId: "games-mlb",
+          url: ESPN_MLB,
+          shortLabel: "MLB",
+          emptyMsg: "No MLB games listed for this day.",
+        },
+        {
+          checkboxId: "filter-nba",
+          sectionId: "section-nba",
+          gamesId: "games-nba",
+          url: ESPN_NBA,
+          shortLabel: "NBA",
+          emptyMsg: "No NBA games listed for this day.",
+        },
+        {
+          checkboxId: "filter-nhl",
+          sectionId: "section-nhl",
+          gamesId: "games-nhl",
+          url: ESPN_NHL,
+          shortLabel: "NHL",
+          emptyMsg: "No NHL games listed for this day.",
+        },
+      ];
+
+      var dateInput = document.getElementById("ncaa-date");
+      var todayBtn = document.getElementById("ncaa-today");
+      var statusEl = document.getElementById("ncaa-status");
+      var timerId = null;
+
+      /** Match sticky sidebar top to real navbar height so it never slides under the header */
+      function setSiteNavOffset() {
+        var nav = document.querySelector("nav.navbar.sticky-top");
+        if (!nav) return;
+        var h = Math.ceil(nav.getBoundingClientRect().height);
+        document.documentElement.style.setProperty("--site-nav-offset", h + 8 + "px");
+      }
+
+      setSiteNavOffset();
+      window.addEventListener("resize", setSiteNavOffset);
+      window.addEventListener("load", setSiteNavOffset);
+      if (window.ResizeObserver) {
+        var navEl = document.querySelector("nav.navbar.sticky-top");
+        if (navEl) {
+          new ResizeObserver(setSiteNavOffset).observe(navEl);
+        }
+      }
+      var navCollapse = document.getElementById("navMain");
+      if (navCollapse) {
+        navCollapse.addEventListener("shown.bs.collapse", setSiteNavOffset);
+        navCollapse.addEventListener("hidden.bs.collapse", setSiteNavOffset);
+      }
+
+      /** Turn a Date into YYYYMMDD for ESPN's dates= parameter */
+      function ymdFromDate(d) {
+        var y = d.getFullYear();
+        var m = String(d.getMonth() + 1);
+        if (m.length === 1) m = "0" + m;
+        var day = String(d.getDate());
+        if (day.length === 1) day = "0" + day;
+        return String(y) + m + day;
+      }
+
+      /** Read yyyy-mm-dd from the date input → YYYYMMDD */
+      function ymdFromInput() {
+        var v = dateInput.value;
+        if (!v) return ymdFromDate(new Date());
+        return v.replace(/-/g, "");
+      }
+
+      function setTodayInput() {
+        dateInput.valueAsDate = new Date();
+      }
+
+      /** Prefer Gamecast link on the event */
+      function gamecastHref(event) {
+        var links = event.links || [];
+        for (var i = 0; i < links.length; i++) {
+          var rel = links[i].rel || [];
+          for (var j = 0; j < rel.length; j++) {
+            if (rel[j] === "summary") return links[i].href;
+          }
+        }
+        return null;
+      }
+
+      /** Sort: live games first, then upcoming, then finished */
+      function sortState(ev) {
+        var st = ev.competitions[0].status.type.state;
+        if (st === "in") return 0;
+        if (st === "pre") return 1;
+        return 2;
+      }
+
+      function buildGameHtml(ev) {
+        var comp = ev.competitions[0];
+        var status = comp.status;
+        var typ = status.type;
+        var state = typ.state;
+        var line = typ.shortDetail || typ.detail || "";
+        var away = null;
+        var home = null;
+        var comps = comp.competitors || [];
+        for (var i = 0; i < comps.length; i++) {
+          if (comps[i].homeAway === "away") away = comps[i];
+          if (comps[i].homeAway === "home") home = comps[i];
+        }
+        if (!away || !home) return "";
+
+        var awayAbbr = away.team.abbreviation || away.team.shortDisplayName || "?";
+        var homeAbbr = home.team.abbreviation || home.team.shortDisplayName || "?";
+        var awayScore = away.score != null ? String(away.score) : "—";
+        var homeScore = home.score != null ? String(home.score) : "—";
+        var awayLogo = away.team.logo || "";
+        var homeLogo = home.team.logo || "";
+
+        var href = gamecastHref(ev);
+        var live = state === "in";
+        var wrapStart = href
+          ? '<a href="' + href + '" target="_blank" rel="noopener noreferrer">'
+          : "";
+        var wrapEnd = href ? "</a>" : "";
+
+        var liveTag = live
+          ? '<span class="ncaa-pulse me-1" aria-hidden="true"></span><span class="text-danger fw-bold">LIVE</span>'
+          : "";
+
+        var cls = "ncaa-game mb-2" + (live ? " ncaa-live" : "");
+
+        var logoAway = awayLogo
+          ? '<img class="ncaa-logo me-1" src="' + awayLogo + '" alt="" width="22" height="22">'
+          : "";
+        var logoHome = homeLogo
+          ? '<img class="ncaa-logo me-1" src="' + homeLogo + '" alt="" width="22" height="22">'
+          : "";
+
+        return (
+          '<div class="' +
+          cls +
+          '">' +
+          '<div class="d-flex justify-content-between align-items-start mb-1">' +
+          '<span class="small text-muted">' +
+          liveTag +
+          (live ? " " : "") +
+          line +
+          "</span>" +
+          "</div>" +
+          wrapStart +
+          '<div class="ncaa-team-row fw-semibold">' +
+          '<span>' +
+          logoAway +
+          awayAbbr +
+          "</span>" +
+          "<span>" +
+          awayScore +
+          "</span>" +
+          "</div>" +
+          '<div class="ncaa-team-row fw-semibold">' +
+          '<span>' +
+          logoHome +
+          homeAbbr +
+          "</span>" +
+          "<span>" +
+          homeScore +
+          "</span>" +
+          "</div>" +
+          (href
+            ? '<div class="small mt-1 ncaa-gamecast text-muted">Open Gamecast →</div>'
+            : "") +
+          wrapEnd +
+          "</div>"
+        );
+      }
+
+      function renderInto(container, events, emptyLabel) {
+        var copy = events.slice();
+        copy.sort(function (a, b) {
+          var d = sortState(a) - sortState(b);
+          if (d !== 0) return d;
+          return new Date(a.date) - new Date(b.date);
+        });
+        var html = "";
+        for (var k = 0; k < copy.length; k++) {
+          html += buildGameHtml(copy[k]);
+        }
+        if (!html) {
+          container.innerHTML =
+            '<p class="small text-muted px-1 mb-0">' +
+            emptyLabel +
+            "</p>";
+        } else {
+          container.innerHTML = html;
+        }
+      }
+
+      /** Build list of leagues to fetch; hide sections when their checkbox is off */
+      function prepareLeagues() {
+        var active = [];
+        for (var i = 0; i < LEAGUES.length; i++) {
+          var cfg = LEAGUES[i];
+          var cb = document.getElementById(cfg.checkboxId);
+          var section = document.getElementById(cfg.sectionId);
+          var gamesEl = document.getElementById(cfg.gamesId);
+          if (!cb || !section || !gamesEl) continue;
+          if (!cb.checked) {
+            section.style.display = "none";
+            gamesEl.innerHTML = "";
+            continue;
+          }
+          section.style.display = "";
+          active.push({ cfg: cfg, gamesEl: gamesEl });
+        }
+        return active;
+      }
+
+      function fetchScores() {
+        var active = prepareLeagues();
+        if (active.length === 0) {
+          statusEl.textContent =
+            "No leagues selected — check one or more boxes above.";
+          return;
+        }
+
+        var ymd = ymdFromInput();
+        var q = "?dates=" + encodeURIComponent(ymd) + "&limit=400";
+        statusEl.textContent =
+          "Loading " +
+          ymd.slice(0, 4) +
+          "-" +
+          ymd.slice(4, 6) +
+          "-" +
+          ymd.slice(6) +
+          "…";
+
+        Promise.allSettled(
+          active.map(function (item) {
+            return fetch(item.cfg.url + q).then(function (r) {
+              if (!r.ok) throw new Error("HTTP " + r.status);
+              return r.json();
+            });
+          })
+        )
+          .then(function (results) {
+            var errCount = 0;
+            for (var i = 0; i < results.length; i++) {
+              var item = active[i];
+              var res = results[i];
+              if (res.status === "fulfilled") {
+                var events = res.value.events || [];
+                renderInto(item.gamesEl, events, item.cfg.emptyMsg);
+              } else {
+                errCount++;
+                item.gamesEl.innerHTML =
+                  '<p class="small text-danger px-1 mb-0">Could not load ' +
+                  item.cfg.shortLabel +
+                  ".</p>";
+              }
+            }
+
+            var now = new Date();
+            var t = now.toLocaleTimeString(undefined, {
+              hour: "numeric",
+              minute: "2-digit",
+            });
+
+            if (errCount === results.length) {
+              statusEl.textContent =
+                "Could not load scores (offline or API change).";
+              return;
+            }
+
+            var parts = [];
+            for (var j = 0; j < results.length; j++) {
+              var it = active[j];
+              var r = results[j];
+              if (r.status === "fulfilled") {
+                var evs = r.value.events || [];
+                parts.push(evs.length + " " + it.cfg.shortLabel);
+              } else {
+                parts.push(it.cfg.shortLabel + " unavailable");
+              }
+            }
+            statusEl.textContent = "Updated " + t + " · " + parts.join(" · ");
+          })
+          .catch(function (err) {
+            statusEl.textContent =
+              "Could not load scores (offline or API change).";
+            for (var k = 0; k < active.length; k++) {
+              active[k].gamesEl.innerHTML =
+                '<p class="small text-danger px-1 mb-0">' +
+                String(err.message || err) +
+                "</p>";
+            }
+          });
+      }
+
+      function schedule() {
+        if (timerId) clearInterval(timerId);
+        fetchScores();
+        timerId = setInterval(fetchScores, POLL_MS);
+      }
+
+      setTodayInput();
+      dateInput.addEventListener("change", schedule);
+      todayBtn.addEventListener("click", function () {
+        setTodayInput();
+        schedule();
+      });
+
+      for (var c = 0; c < LEAGUES.length; c++) {
+        var filterEl = document.getElementById(LEAGUES[c].checkboxId);
+        if (filterEl) {
+          filterEl.addEventListener("change", schedule);
+        }
+      }
+
+      schedule();
+    })();
+  </script>
+</body>
+</html>
