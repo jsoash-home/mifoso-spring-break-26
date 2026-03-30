@@ -582,6 +582,19 @@
       border-color: var(--terracotta);
     }
 
+    /* Joshua Tree “tomorrow” runbook */
+    .jt-tomorrow-panel {
+      border: 2px solid var(--sunset);
+      border-radius: 0.75rem;
+      background: linear-gradient(145deg, rgba(244, 162, 97, 0.14) 0%, rgba(255, 251, 245, 0.98) 42%, rgba(126, 184, 218, 0.1) 100%);
+      box-shadow: 0 2px 10px rgba(61, 52, 41, 0.08);
+    }
+
+    .jt-tomorrow-panel .jt-time {
+      font-weight: 700;
+      color: var(--terracotta);
+    }
+
     @media (max-width: 575.98px) {
       .hero h1 { font-size: 2.2rem !important; word-break: break-word; hyphens: auto; }
     }
@@ -605,6 +618,7 @@
         <ul class="navbar-nav ms-auto gap-2">
           <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#whos-coming">Who&apos;s Coming</a></li>
           <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#itinerary">Itinerary</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#joshua-tree-tomorrow">JT tomorrow</a></li>
           <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#gallery">Gallery</a></li>
           <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#resort">Resort</a></li>
           <li class="nav-item"><a class="nav-link nav-link-main-tab" href="#logistics">Getting There</a></li>
@@ -743,7 +757,47 @@
         <strong>Weather:</strong> Typical late-March Palm Desert averages — highs around <strong>88–92°F</strong>, lots of sun, and <strong>~0% rain</strong> (estimates; check a forecast before you pack). 🌡️
       </p>
 
+      <div id="joshua-tree-tomorrow" class="jt-tomorrow-panel p-3 p-md-4 mb-4">
+        <h3 class="h4 display-font mb-2">🌵 Joshua Tree — tomorrow&apos;s runbook</h3>
+        <p class="small text-secondary mb-2">
+          Built for <strong>11 people · 2 cars</strong>, wheels rolling <strong>~8:00am</strong> from the villas. The date and weather below use <strong>your device&apos;s calendar &quot;tomorrow&quot;</strong> and a live forecast for the park (Open-Meteo). Double-check on <a class="text-link-desert" href="https://www.nps.gov/jotr/planyourvisit/conditions.htm" target="_blank" rel="noopener noreferrer">NPS conditions</a> before you go.
+        </p>
+        <p id="jt-tomorrow-date-line" class="fw-bold mb-2" aria-live="polite">Loading date…</p>
+        <p id="jt-tomorrow-weather" class="small mb-3 p-2 rounded bg-white bg-opacity-75 border" role="status" aria-live="polite">Loading Joshua Tree forecast…</p>
+
+        <h4 class="h6 text-uppercase text-secondary mb-2">Convoy &amp; park logistics</h4>
+        <ul class="small mb-3">
+          <li><span class="jt-time">7:45am</span> — Meet at <strong>Westin Mission Hills villas</strong>: coolers, daypacks, hats, sunscreen, <strong>3L+ water per person</strong>, snacks. Evan owns the cooler checklist.</li>
+          <li><strong>Two cars:</strong> Split ~5–6 per car; decide drivers now. <strong>Car A</strong> leads (maps + park pass / payment ready). Text thread: share ETA if separated.</li>
+          <li><span class="jt-time">8:00am</span> — Depart. Route: Hwy 111 → I-10 E → Hwy 62 toward <strong>Twentynine Palms</strong> (plan ~75–90 min with a stop).</li>
+          <li><strong>Entrance:</strong> Use the <strong>North Entrance</strong> (Twentynine Palms) after breakfast — often less slammed than the West Entrance on busy days. <strong>Two vehicles</strong> = two park fees unless one pass covers both (e.g. America the Beautiful — one pass per car unless rules change; bring cards for two entries to be safe).</li>
+          <li>No gas stations <em>inside</em> the park — top off before you arrive.</li>
+        </ul>
+
+        <h4 class="h6 text-uppercase text-secondary mb-2">Hour-by-hour (flex around weather)</h4>
+        <ul class="small mb-3">
+          <li><span class="jt-time">~9:00–9:45am</span> — <strong>Breakfast — Keedy&apos;s</strong> (Route 66 diner, Twentynine Palms). Big plates, fast coffee, room for a loud table of 11 if you stagger two seatings. <a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Keedys+Grill+Twenty+Nine+Palms+CA" target="_blank" rel="noopener noreferrer">Maps → Keedy&apos;s</a></li>
+          <li><span class="jt-time">~10:00am</span> — Enter JTNP (North). Hit restrooms; apply sunscreen.</li>
+          <li><span class="jt-time">10:15am–12:15pm</span> — <strong>Hidden Valley Nature Trail</strong> (~1 mi loop, easy, classic JT scenery) then <strong>Skull Rock</strong> pull-off (scramble + photos). If parking is nuts, do Skull Rock first.</li>
+          <li><span class="jt-time">12:15–1:30pm</span> — <strong>Lunch</strong> — <strong>Option A:</strong> Picnic at <strong>Hidden Valley picnic area</strong> (sandwiches from Ralphs/Stater Bros last night — fastest for 11). <strong>Option B:</strong> Drive out to <strong>Joshua Tree village</strong> — <a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Natural+Sisters+Cafe+Joshua+Tree" target="_blank" rel="noopener noreferrer">Natural Sisters Cafe</a> (veg-forward, popular) or grab pizza at <a class="text-link-desert" href="https://www.google.com/maps/search/?api=1&amp;query=Pie+for+the+People+Joshua+Tree" target="_blank" rel="noopener noreferrer">Pie for the People</a> (call ahead for a huge group).</li>
+          <li><span class="jt-time">1:45–3:00pm</span> — <strong>Barker Dam Nature Trail</strong> (~1.3 mi round trip, easy–moderate; water when it&apos;s flowing). <strong>Arch Rock</strong> is nearby if the group wants a short add-on and everyone&apos;s got energy.</li>
+          <li><span class="jt-time">3:15–4:00pm</span> — <strong>Cholla Cactus Garden</strong> — short boardwalk; go when light is pretty and temps ease. Stay on trail (those spines jump).</li>
+          <li><span class="jt-time">4:15–5:00pm</span> — <strong>Keys View</strong> if skies are clear (windy ridge — bring a layer). Big group photo. Skip if the live forecast is socked in or lightning risk.</li>
+          <li><span class="jt-time">~5:30pm+</span> — Roll back toward the valley; hydrate like it&apos;s a sport.</li>
+        </ul>
+
+        <h4 class="h6 text-uppercase text-secondary mb-2">Can&apos;t-miss (first-timer hits)</h4>
+        <ul class="small mb-0">
+          <li><strong>Hidden Valley</strong> — the postcard JT loop.</li>
+          <li><strong>Skull Rock</strong> — zero hiking required for the money shot.</li>
+          <li><strong>Cholla Cactus Garden</strong> — surreal golden-hour glow.</li>
+          <li><strong>Keys View</strong> — Salton Sea / fault-line views on a clear day.</li>
+        </ul>
+        <p class="small text-muted mt-3 mb-0">If tomorrow&apos;s forecast is hot, flip morning and afternoon: do Cholla/Keys earlier, keep Barker Dam for cooler hours. If it&apos;s windy, add layers at Keys View and watch doors in the parking lot.</p>
+      </div>
+
       <div class="d-flex flex-wrap gap-2 mb-4" id="day-jump-nav" aria-label="Jump to day">
+        <a href="#joshua-tree-tomorrow" class="btn btn-sm fw-bold" style="border-color: var(--sunset); color: var(--terracotta);">🌵 JT tomorrow</a>
         <a href="#day-327" class="btn btn-sm btn-outline-secondary fw-bold">3/27</a>
         <a href="#day-328" class="btn btn-sm btn-outline-secondary fw-bold">3/28</a>
         <a href="#day-329" class="btn btn-sm btn-outline-secondary fw-bold">3/29</a>
@@ -807,6 +861,7 @@
             <div class="card-header">Mon Mar 30 — Joshua Tree Day Trip (All) 🌵</div>
             <div class="card-body">
               <p class="mb-2"><span class="weather-pill">☀️ ~90°F · Sunny · Rain ~0% (est.)</span></p>
+              <p class="small mb-2"><strong>📌 Live plan:</strong> For <strong>calendar tomorrow</strong> (weather + 11 people / 2 cars / ~8am departure), jump to <a class="text-link-desert" href="#joshua-tree-tomorrow">Joshua Tree — tomorrow&apos;s runbook</a> at the top of Day-by-Day — it updates automatically.</p>
               <p class="small mb-2"><strong>🌄 6:45–8:15am:</strong> Early breakfast — pack <strong>3–4L water per person</strong>, hats, sunscreen, and snacks. Drive ~60–70 min to the <strong>West Entrance</strong> of Joshua Tree National Park. Evan is in charge of the cooler checklist. No exceptions.</p>
               <p class="small mb-2"><strong>🪨 8:30am–12:30pm:</strong> <strong>Hidden Valley</strong> (1 mi loop), <strong>Barker Dam</strong> (1.3 mi), and <strong>Skull Rock pull-outs</strong> — iconic, short, family-friendly. Landon claims every boulder. Picnic lunch at Hidden Valley tables or near Skull Rock.</p>
               <p class="small mb-2"><strong>🌅 12:45–1:30pm:</strong> <strong>Keys View</strong> overlook — quick paved path, sweeping vistas of the valley. Group photo mandatory. Brooke directs.</p>
@@ -1523,6 +1578,102 @@
       btn.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
+    })();
+
+    /** Joshua Tree — “tomorrow” date + live forecast (Open-Meteo, JTNP area) */
+    (function () {
+      var dateEl = document.getElementById("jt-tomorrow-date-line");
+      var wxEl = document.getElementById("jt-tomorrow-weather");
+      if (!dateEl || !wxEl) return;
+
+      function pad2(n) {
+        return n < 10 ? "0" + n : String(n);
+      }
+
+      var tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      tomorrow.setHours(12, 0, 0, 0);
+
+      var iso =
+        tomorrow.getFullYear() +
+        "-" +
+        pad2(tomorrow.getMonth() + 1) +
+        "-" +
+        pad2(tomorrow.getDate());
+
+      var pretty = tomorrow.toLocaleDateString("en-US", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      });
+
+      dateEl.textContent = "Targeting: " + pretty + " (tomorrow on your device)";
+
+      function describeWx(code) {
+        var map = {
+          0: "Clear sky",
+          1: "Mainly clear",
+          2: "Partly cloudy",
+          3: "Overcast",
+          45: "Foggy",
+          48: "Fog",
+          51: "Light drizzle",
+          53: "Drizzle",
+          55: "Dense drizzle",
+          61: "Light rain",
+          63: "Rain",
+          65: "Heavy rain",
+          71: "Light snow",
+          80: "Rain showers",
+          81: "Heavy showers",
+          95: "Thunderstorm",
+          96: "Thunderstorm (hail possible)",
+          99: "Severe thunderstorm",
+        };
+        return map[code] != null ? map[code] : "Mixed conditions";
+      }
+
+      var url =
+        "https://api.open-meteo.com/v1/forecast?latitude=33.8734&longitude=-115.8965&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,windspeed_10m_max,weathercode&timezone=America%2FLos_Angeles&forecast_days=8&temperature_unit=fahrenheit&windspeed_unit=mph";
+
+      fetch(url)
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (data) {
+          if (!data || !data.daily || !data.daily.time) throw new Error("bad payload");
+          var times = data.daily.time;
+          var idx = times.indexOf(iso);
+          if (idx === -1) {
+            wxEl.textContent =
+              "Could not line up tomorrow in the forecast window — check Weather.gov for Joshua Tree NP (Twentynine Palms / park) before you leave.";
+            return;
+          }
+          var hi = data.daily.temperature_2m_max[idx];
+          var lo = data.daily.temperature_2m_min[idx];
+          var pop = data.daily.precipitation_probability_max[idx];
+          var wind = data.daily.windspeed_10m_max[idx];
+          var code = data.daily.weathercode[idx];
+          wxEl.innerHTML =
+            "<strong>Joshua Tree area</strong> (forecast for " +
+            iso +
+            "): <strong>" +
+            describeWx(code) +
+            "</strong> · High <strong>" +
+            Math.round(hi) +
+            "°F</strong> · Low <strong>" +
+            Math.round(lo) +
+            "°F</strong> · Rain chance <strong>" +
+            (pop != null ? pop : "?") +
+            "%</strong> · Max wind ~<strong>" +
+            Math.round(wind) +
+            " mph</strong>. Plan extra water if it's hot; skip exposed ridges if lightning or extreme wind.";
+        })
+        .catch(function () {
+          wxEl.textContent =
+            "Live forecast unavailable — check Weather.gov or the NPS Joshua Tree conditions page before you roll out.";
+        });
     })();
 
     /** Navbar links to Who / Itinerary / Gallery should show the Main tab (not Restaurants). */
